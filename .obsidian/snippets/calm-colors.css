@@ -1,0 +1,26 @@
+/* Neutral headings, bold and italic; calm blue accent instead of pink */
+body, .theme-light, .theme-dark {
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
+  --bold-color: var(--text-normal);
+  --italic-color: var(--text-muted);
+  --accent-h: 212;
+  --accent-s: 45%;
+  --accent-l: 45%;
+  --text-accent: hsl(212, 45%, 45%);
+  --text-accent-hover: hsl(212, 45%, 38%);
+  --interactive-accent: hsl(212, 45%, 45%);
+  --interactive-accent-hover: hsl(212, 45%, 38%);
+  --link-color: hsl(212, 45%, 45%);
+  --link-external-color: hsl(212, 45%, 45%);
+  --link-unresolved-color: hsl(212, 25%, 55%);
+  --tag-color: hsl(212, 45%, 45%);
+  --tag-background: hsla(212, 45%, 45%, 0.1);
+  --checkbox-color: hsl(212, 45%, 45%);
+  --list-marker-color: var(--text-muted);
+  --blockquote-border-color: hsl(212, 30%, 70%);
+}

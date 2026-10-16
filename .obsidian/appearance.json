@@ -1,1 +1,6 @@
-{}
+{
+  "enabledCssSnippets": [
+    "calm-colors"
+  ],
+  "accentColor": "#3f6fa3"
+}

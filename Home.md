@@ -13,6 +13,7 @@ A place to explore relevant concepts and their implications.
 - `Concepts/` one folder per concept, with its main note and discussions
 - `Sources/` one note per paper or report, with quotes, page numbers and Zotero links
 - `Updates/` weekly suggestions from new literature
+- `New literature/` papers from the daily literature check, with takeaways ([[New literature]])
 - `Inbox/` and `Daily/` raw notes waiting to be filed
 - `Templates/` note templates
 - `Claude setup/` the skill and setup notes, kept so they move with you
@@ -27,4 +28,5 @@ SORT file.name ASC
 *(The table above needs the Dataview community plugin. Without it, browse `Concepts/` directly.)*
 
 ## Workspace links
+- [Reading Desk (phone)](https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU)
 - [CIAT work vault](obsidian://open?vault=ciat-work&file=Home)

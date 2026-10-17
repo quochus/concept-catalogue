@@ -7,8 +7,6 @@ created: {{date:YYYY-MM-DD}}
 last_reviewed: {{date:YYYY-MM-DD}}
 ---
 
-# {{title}}
-
 ## My first take
 *Written by Quoc before reading the draft ({{date:YYYY-MM-DD}}). Never edited later.*
 

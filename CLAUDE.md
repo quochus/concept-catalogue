@@ -8,3 +8,5 @@ Key rules:
 - Never rewrite Definitions, Features, Implications or My first take without being asked.
 - Never write "In my words"; it is Quoc's.
 - CIAT project material belongs in the separate ciat-work vault, not here.
+
+- Numbered folders: 1. Daily, 2. New literature (synced with the Reading Desk), 3. Concepts, 4. Discuss, 5. Sources, 6. Updates.

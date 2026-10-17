@@ -34,7 +34,7 @@ Where the literature agrees with, extends or challenges my first take.
 
 ## Discussions
 ```dataview
-LIST FROM "Concepts/{{title}}/Discussions" SORT file.name DESC
+LIST FROM "3. Concepts/{{title}}/Discussions" SORT file.name DESC
 ```
 
 ## Sources

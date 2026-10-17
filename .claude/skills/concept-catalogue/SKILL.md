@@ -15,15 +15,21 @@ Quoc keeps a personal catalogue of concepts, frameworks, methods and approaches 
 
 ## Vault structure
 
-    Home.md                                       start page
-    Inbox/                                        raw notes, filed later
-    Daily/YYYY-MM-DD.md                           daily notes
-    Concepts/<Concept>/<Concept>.md               main entry
-    Concepts/<Concept>/Discussions/YYYY-MM-DD <topic>.md
-    Sources/<citekey>.md                          one note per source
-    Updates/YYYY-MM-DD.md                         weekly update suggestions
-    Templates/                                    note templates
-    Claude setup/                                 skills, instructions, setup notes
+    Home.md                                              start page
+    1. Daily/YYYY-MM-DD.md                               daily notes: raw notes, ideas
+    2. New literature/                                   daily literature check (New literature.md index)
+        Papers/                                          papers to read / reading
+        Archive/YYYY-MM/                                 papers read or not relevant
+    3. Concepts/<Concept name>/<Concept name>.md         main entry
+    3. Concepts/<Concept name>/Discussions/YYYY-MM-DD <topic>.md   saved discussions (sub-pages)
+    4. Discuss/                                          discussions in progress (Discuss.md index)
+    5. Sources/<citekey>.md                              one note per source used as evidence
+    6. Updates/YYYY-MM-DD.md                             weekly update suggestions
+    Templates/                                           Concept, Source, Discussion, Daily note
+    Attachments/                                         images and files
+    Claude setup/                                        skill copies, setup notes
+
+The numbered folders are the workflow order. `2. New literature/` is filled and kept in step by a scheduled sync with the Reading Desk page (https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU); do not reorganise it by hand beyond what Quoc asks. A paper there becomes a `5. Sources/` note only when Quoc asks to use it for an entry.
 
 ## Step 1: Ask for Quoc's first take (always, before drafting)
 
@@ -59,9 +65,9 @@ Use Templates/Concept.md. Sections: My first take (his words, verbatim, dated, n
 
 When Quoc chats about a concept, offer to save it as a dated note in Concepts/<Concept>/Discussions/ (Templates/Discussion.md): question explored, main points, where Quoc landed (attributed to him), open questions, new sources. Link it from the main entry. Keep his conclusions apart from Claude's suggestions. Offer a critical view, compare framings, or test the concept against his contexts (Son La, Laos, Cambodia) when useful.
 
-## Inbox
+## Daily notes and filing
 
-When asked to "file my inbox": read each note in Inbox/ and Daily/, move concept material into the right Discussions page or a new concept stub, and leave a one-line log in the daily note of what went where. Anything about CIAT projects goes to the ciat-work vault's Inbox instead. Ask when unsure.
+When asked to "file my notes": read `1. Daily/` and `4. Discuss/`, move concept material into the right concept's `Discussions/` page or a new concept stub in `3. Concepts/`, and log one line per item under "Filed" in that day's daily note. Never edit or delete Quoc's raw text. CIAT project material goes to the ciat-work vault's `1. Notes/` instead. Ask when unsure where something belongs.
 
 ## Updates
 

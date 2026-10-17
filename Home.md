@@ -3,29 +3,30 @@
 A place to explore relevant concepts and their implications.
 
 ## How it works
-1. **Note freely** in today's daily note or in `Inbox/`. No structure needed.
-2. **Pick one concept a day**, ideally one your current work needs. Ask Claude to start an entry; Claude asks for your first take before drafting.
-3. **Discuss** a concept with Claude; conclusions are saved under that concept's `Discussions/`.
-4. **Review updates** in `Updates/`. Nothing changes in an entry until you ask.
-5. **Write "In my words"** for every entry. Only you write that line.
+1. **Note freely** in today's note in `1. Daily/`. No structure needed.
+2. **Skim new papers** in `2. New literature/` (or on the Reading Desk on your phone).
+3. **Pick one concept a day** for `3. Concepts/`, ideally one your current work needs. Claude asks for your first take before drafting.
+4. **Discuss** a concept with Claude in `4. Discuss/`; discussions worth keeping are saved as sub-pages under that concept.
+5. **Review updates** in `6. Updates/`. Nothing changes in an entry until you ask.
+6. **Write "In my words"** for every entry. Only you write that line.
 
 ## Folders
-- `Concepts/` one folder per concept, with its main note and discussions
-- `Sources/` one note per paper or report, with quotes, page numbers and Zotero links
-- `Updates/` weekly suggestions from new literature
-- `New literature/` papers from the daily literature check, with takeaways ([[New literature]])
-- `Inbox/` and `Daily/` raw notes waiting to be filed
-- `Templates/` note templates
-- `Claude setup/` the skill and setup notes, kept so they move with you
+- `1. Daily/` daily notes: raw notes, ideas, to-look-ups
+- `2. New literature/` papers from the daily literature check, with takeaways ([[New literature]])
+- `3. Concepts/` one folder per concept: the main entry plus its `Discussions/` sub-pages
+- `4. Discuss/` conversations on concepts in progress ([[Discuss]])
+- `5. Sources/` one note per paper or report used as evidence, with exact quotes, page numbers and Zotero links
+- `6. Updates/` weekly suggestions from new literature for existing entries
+- `Templates/`, `Attachments/`, `Claude setup/` support folders
 
 ## Entries
 ```dataview
 TABLE type, fields, status, last_reviewed
-FROM "Concepts"
+FROM "3. Concepts"
 WHERE type
 SORT file.name ASC
 ```
-*(The table above needs the Dataview community plugin. Without it, browse `Concepts/` directly.)*
+*(The table above needs the Dataview community plugin. Without it, browse `3. Concepts/` directly.)*
 
 ## Workspace links
 - [Reading Desk (phone)](https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU)

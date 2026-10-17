@@ -6,12 +6,12 @@ Papers found by the daily literature check (around 11:00 Hanoi time), with Claud
 - Papers marked read or not relevant are moved to `Archive/YYYY-MM/` (month found). Nothing is deleted.
 - Each note carries Claude's `relevance` (high/medium/low), `relates_to` (your projects) and your own `my_relevance`.
 - Papers are also added to Zotero, in the collection **_Daily new articles**.
-- A paper worth keeping for a concept entry can be turned into a proper source note in `Sources/` (ask Claude).
+- A paper worth keeping for a concept entry can be turned into a proper source note in `5. Sources/` (ask Claude).
 
 ## To read
 ```dataview
 TABLE WITHOUT ID file.link AS Paper, venue AS Venue, found_on AS Found, top_pick AS "Top pick"
-FROM "New literature/Papers"
+FROM "2. New literature/Papers"
 WHERE status = "to read" OR status = "reading"
 SORT found_on DESC, top_pick DESC
 ```
@@ -19,7 +19,7 @@ SORT found_on DESC, top_pick DESC
 ## Read
 ```dataview
 TABLE WITHOUT ID file.link AS Paper, venue AS Venue, found_on AS Found
-FROM "New literature/Archive"
+FROM "2. New literature/Archive"
 WHERE status = "read"
 SORT found_on DESC
 ```
@@ -27,7 +27,7 @@ SORT found_on DESC
 ## Relevant to my work
 ```dataview
 TABLE WITHOUT ID file.link AS Paper, relevance AS Relevance, relates_to AS "Relates to", status AS Status
-FROM "New literature"
+FROM "2. New literature"
 WHERE type = "paper" AND (my_relevance = "yes" OR (relevance = "high" AND my_relevance != "no"))
 SORT found_on DESC
 ```

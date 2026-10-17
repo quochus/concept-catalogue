@@ -1,5 +1,6 @@
 ---
 type: concept
+short: ""
 fields: []
 related: []
 status: draft
@@ -34,8 +35,11 @@ Where the literature agrees with, extends or challenges my first take.
 
 ## Discussions
 ```dataview
-LIST FROM "3. Concepts/{{title}}/Discussions" SORT file.name DESC
+LIST FROM [[]] AND "4. Discuss" SORT file.name DESC
 ```
 
-## Sources
-- [[citekey]] - why included (seminal / highly cited / review / distinct perspective / recent)
+## Key sources
+- Author (Year). Title. — why included (seminal / highly cited / review / distinct perspective / recent) — [Zotero](zotero://select/library/items/ITEMKEY)
+
+## Evidence
+- Claim — "short quote" (p. N) [open](zotero://open-pdf/library/items/ITEMKEY?page=N)

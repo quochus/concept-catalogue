@@ -9,4 +9,5 @@ Key rules:
 - Never write "In my words"; it is Quoc's.
 - CIAT project material belongs in the separate ciat-work vault, not here.
 
-- Numbered folders: 1. Daily, 2. New literature (synced with the Reading Desk), 3. Concepts, 4. Discuss, 5. Sources, 6. Updates.
+- Numbered folders: 1. Daily, 2. New literature (synced with the Reading Desk; Concept updates/ holds suggested edits), 3. Concepts (one page per concept; 0. Dictionary is the A-Z index), 4. Discuss (one page per discussion), 5. Sources (key works only).
+- Evidence (quote, page, Zotero link) goes in the concept page itself; make a Sources note only for a key work cited across several concepts.

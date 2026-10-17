@@ -1,6 +1,8 @@
 ---
-concept:
+type: discussion
+concepts: []
 date: {{date:YYYY-MM-DD}}
+status: open
 ---
 
 ## Question explored

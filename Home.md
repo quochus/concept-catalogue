@@ -17,7 +17,6 @@ A place to explore relevant concepts and their implications.
 - `2. New literature/` papers from the daily literature check, plus suggested concept updates ([[New literature]])
 - `3. Concepts/` one page per concept, and the [[0. Dictionary|Dictionary]] (A–Z)
 - `4. Discuss/` one page per discussion, linked to its concepts ([[Discuss]])
-- `5. Sources/` source notes only for key works cited across several concepts
 - `Templates/`, `Attachments/`, `Claude setup/` support folders
 
 ## Entries

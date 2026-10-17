@@ -17,22 +17,24 @@ Quoc keeps a personal catalogue of concepts, frameworks, methods and approaches 
 ## Vault structure
 
 ```
-Home.md                                                   start page
-1. Daily/YYYY-MM-DD.md                                    daily notes: raw notes, ideas
-2. New literature/                                        daily literature check (index: New literature.md)
-    Papers/                                               papers to read / reading
-    Archive/YYYY-MM/                                      papers read or not relevant
-3. Concepts/<Concept name>/<Concept name>.md              main entry
-3. Concepts/<Concept name>/Discussions/YYYY-MM-DD <topic>.md   saved discussions (sub-pages)
-4. Discuss/                                               discussions in progress (index: Discuss.md)
-5. Sources/<citekey>.md                                   one note per source used as evidence
-6. Updates/YYYY-MM-DD.md                                  weekly update suggestions
-Templates/                                                Concept, Source, Discussion, Daily note
-Attachments/                                              images and files
-Claude setup/                                             skill copies, setup notes
+Home.md                                       start page
+1. Daily/YYYY-MM-DD.md                        daily notes: raw notes, ideas
+2. New literature/                            daily literature check (index: New literature.md)
+    Papers/                                   papers to read / reading
+    Archive/YYYY-MM/                          papers read or not relevant
+    Concept updates/YYYY-MM-DD.md             suggested edits to concept pages
+3. Concepts/0. Dictionary.md                  A-Z index of all concepts (bookmarked, always on top)
+3. Concepts/<Concept name>.md                 one page per concept
+4. Discuss/YYYY-MM-DD <topic>.md              one page per discussion (index: Discuss.md)
+5. Sources/<citekey>.md                       key works cited across several concepts only
+Templates/                                    Concept, Discussion, Source, Daily note
+Attachments/                                  images and files
+Claude setup/                                 skill copies, setup notes
 ```
 
-The numbers follow the workflow. `2. New literature/` is filled and kept in step by a scheduled sync with the Reading Desk page (https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU); don't reorganise it by hand beyond what Quoc asks. A paper there becomes a `5. Sources/` note only when Quoc asks to use it for an entry.
+The numbers follow the workflow. Concept pages link out to their discussions and sources: a discussion page lists its concepts in `concepts:` and appears automatically under that concept's Discussions; evidence sits in the concept page itself. `2. New literature/` is filled and kept in step by a scheduled sync with the Reading Desk page (https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU); don't reorganise it by hand. A paper there is used in a concept only when Quoc asks.
+
+The Dictionary (`3. Concepts/0. Dictionary.md`) is a Dataview table grouped by first letter, showing each concept's `short` definition, type, `related` concepts and status. It updates itself; keep every concept page's `short` (one line) and `related` frontmatter filled so the Dictionary reads well.
 
 ## Step 1: Ask for Quoc's first take (always, before drafting)
 
@@ -62,6 +64,7 @@ Use this structure (also in `Templates/Concept.md`):
 ```markdown
 ---
 type: concept | framework | method | approach
+short: "<one-line definition for the Dictionary>"
 fields: [food systems, ...]
 related: ["[[Concept A]]", "[[Concept B]]"]
 status: draft | reviewed
@@ -84,7 +87,7 @@ Key findings that characterize the concept: what it includes and excludes, how i
 Cases from the literature and how the concept is understood or applied, including in Vietnam and ASEAN where evidence exists.
 
 ## Own works
-Where Quoc has used, applied or contributed to the concept (publications, manuscripts, reports, projects). Link CIAT projects with obsidian:// URIs to the ciat-work vault (e.g. obsidian://open?vault=ciat-work&file=Work/<Name>).
+Where Quoc has used, applied or contributed to the concept (publications, manuscripts, reports, projects). Link CIAT projects with obsidian:// URIs to the ciat-work vault (e.g. obsidian://open?vault=ciat-work&file=2. Work/<Name>).
 
 ## Comparison with my first take
 Where the literature agrees with, extends, or challenges Quoc's first take. Specific and short.
@@ -93,23 +96,27 @@ Where the literature agrees with, extends, or challenges Quoc's first take. Spec
 <Left blank for Quoc to write a one-sentence takeaway. Prompt him to fill it.>
 
 ## Discussions
-(Dataview list of the Discussions folder)
+(Dataview: LIST FROM [[]] AND "4. Discuss")
 
-## Sources
-- [[citekey]] — one line on why it's included (seminal / highly cited / review / distinct perspective / recent)
+## Key sources
+- Author (Year). Title. — seminal / highly cited / review / distinct perspective / recent — [Zotero](zotero://select/library/items/<ITEMKEY>)  (or [[citekey]] when a Sources note exists)
+
+## Evidence
+- Claim — "short quote" (p. N) [open](zotero://open-pdf/library/items/<ITEMKEY>?page=N)
 ```
 
 ## Evidence rules
 
-- Every substantive claim cites a source note: `([[citekey]], p. 12)`.
-- In the source note, record for each claim used: a **short** exact quote (under 15 words), the precise locator (page, section, figure or table number), and a Zotero link that opens the PDF at that page: `zotero://open-pdf/library/items/<ITEMKEY>?page=<N>`. Use `zotero://select/library/items/<ITEMKEY>` when no PDF is attached.
+- Every substantive claim in a concept page cites its source inline: `(Author Year, p. 12)`, and the page's **Evidence** section records, for each claim, a **short** exact quote (under 15 words), the precise locator (page, section, figure or table) and a Zotero link that opens the PDF at that page: `zotero://open-pdf/library/items/<ITEMKEY>?page=<N>` (or `zotero://select/library/items/<ITEMKEY>` when no PDF is attached).
+- Do **not** create a note per paper. Create a `5. Sources/<citekey>.md` note only for a key work cited in three or more concepts, or when Quoc asks; then link it as [[citekey]] and keep its quotes there.
 - Figures and images: reference and describe them with figure number and page; do not copy them into the vault.
-- Never invent quotes, page numbers or citation counts. If a locator can't be verified, say so in the note.
+- Never invent quotes, page numbers or citation counts. If a locator can't be verified, say so.
 
-## Source note template
+## Source note template (key works only)
 
 ```markdown
 ---
+type: source
 citekey: <citekey>
 zotero: zotero://select/library/items/<ITEMKEY>
 citations: <count> (source, date checked)
@@ -125,17 +132,17 @@ Full reference.
 
 ## Discussions
 
-Discussions start in `4. Discuss/` (a note there, or a chat). When Quoc chats about a concept, offer to save the discussion as a sub-page of that concept. Save a dated note in `3. Concepts/<Concept>/Discussions/` (template `Templates/Discussion.md`) with: question explored, main points, where Quoc landed (his own conclusions, attributed to him), open questions, and new sources. Link it from the main entry; if it started as a note in `4. Discuss/`, leave that note in place and add a link to the saved sub-page at its top. Distinguish Quoc's conclusions from Claude's suggestions.
+Discussions live in `4. Discuss/`, one page each: `YYYY-MM-DD <topic>.md` (template `Templates/Discussion.md`, frontmatter `type: discussion`, `concepts: ["[[Concept]]"]`, `date`, `status: open | settled`). When Quoc chats about a concept, offer to save the discussion there with: question explored, main points, where Quoc landed (his own conclusions, attributed to him), open questions, and new sources. Because the page lists its concepts, it shows up under Discussions on each concept page; also add the link in the concept's text where it matters. Distinguish Quoc's conclusions from Claude's suggestions.
 
 In discussions, actively support learning: offer a critical view, compare framings, or test the concept against his contexts (Son La, Laos, Cambodia, etc.) when useful.
 
 ## Daily notes and filing
 
-When asked to "file my notes": read `1. Daily/` and `4. Discuss/`, move concept material into the right concept's `Discussions/` page or a new concept stub in `3. Concepts/`, and log one line per item under "Filed" in that day's daily note. Never edit or delete Quoc's raw text. CIAT project material goes to the ciat-work vault's `1. Notes/` instead. Ask when unsure where something belongs.
+When asked to "file my notes": read `1. Daily/` and `4. Discuss/`, move concept material into a discussion page in `4. Discuss/` (linked to its concepts) or a new concept page in `3. Concepts/`, and log one line per item under "Filed" in that day's daily note. Never edit or delete Quoc's raw text. CIAT project material goes to the ciat-work vault's `1. Notes/` instead. Ask when unsure where something belongs.
 
-## Updates
+## Concept updates
 
-A weekly scheduled task scans for new influential or distinct work on existing entries and writes suggestions to `6. Updates/YYYY-MM-DD.md`, grouped by concept, each with the source, what it adds, and the suggested change. **Never rewrite Definitions, Features, Implications or My first take automatically.** Change an entry only when Quoc asks after reviewing the suggestions, then update `last_reviewed`.
+Suggested changes to existing concept pages are written to `2. New literature/Concept updates/YYYY-MM-DD.md`, drawn from papers already in New literature (no separate search): grouped by concept, each with the paper, what it adds, and the proposed edit. **Never rewrite Definitions, Features, Implications or My first take automatically.** Change a page only when Quoc asks after reviewing, then update `last_reviewed`.
 
 ## Finishing
 

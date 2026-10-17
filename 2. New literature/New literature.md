@@ -1,6 +1,6 @@
 # New literature
 
-Papers found by the daily literature check (around 11:00 Hanoi time), with Claude's key takeaways. Read them on the phone in the Reading Desk page: https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU
+Papers found by the daily literature check (every morning around 6:00 Hanoi time), with Claude's key takeaways. Read them on the phone in the Reading Desk page: https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU
 
 - One note per paper in `Papers/` while it is to read or reading. Change `status` (to read, reading, read, not relevant) here or on the Reading Desk page; the next sync copies it across.
 - Papers marked read or not relevant are moved to `Archive/YYYY-MM/` (month found). Nothing is deleted.

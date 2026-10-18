@@ -18,7 +18,7 @@ relates_to:
 - APEC low-emission agri-food incentives concept note
 my_relevance: ''
 read_from: abstract only
-status: to read
+status: later
 zotero: true
 ---
 

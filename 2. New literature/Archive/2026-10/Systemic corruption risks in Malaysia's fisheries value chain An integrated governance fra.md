@@ -16,7 +16,7 @@ relevance: low
 relates_to: []
 my_relevance: ''
 read_from: ''
-status: to read
+status: not relevant
 zotero: true
 ---
 

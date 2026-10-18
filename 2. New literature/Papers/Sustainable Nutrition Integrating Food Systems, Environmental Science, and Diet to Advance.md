@@ -18,7 +18,7 @@ relates_to:
 - Diet-centered food systems framework / FSDS toolbox manuscript
 my_relevance: ''
 read_from: full text
-status: to read
+status: must read
 zotero: true
 ---
 

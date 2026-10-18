@@ -20,7 +20,7 @@ relates_to:
 - NSAF Vietnam policy brief
 my_relevance: ''
 read_from: abstract only
-status: to read
+status: must read
 zotero: true
 ---
 

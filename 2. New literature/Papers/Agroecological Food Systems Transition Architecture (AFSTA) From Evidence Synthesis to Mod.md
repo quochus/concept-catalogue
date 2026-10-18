@@ -20,7 +20,7 @@ relates_to:
 - Concept catalogue
 my_relevance: ''
 read_from: full text
-status: to read
+status: later
 zotero: true
 ---
 

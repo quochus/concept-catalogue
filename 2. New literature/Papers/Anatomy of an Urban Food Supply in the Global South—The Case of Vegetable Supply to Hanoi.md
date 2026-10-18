@@ -19,7 +19,7 @@ relates_to:
 - APEC value chain connectivity concept note
 my_relevance: ''
 read_from: abstract only
-status: to read
+status: must read
 zotero: true
 ---
 

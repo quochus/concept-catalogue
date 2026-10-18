@@ -17,9 +17,9 @@ relevance: high
 relates_to:
 - Son La SME nutrition training
 - MSME finance PoD
-my_relevance: ''
+my_relevance: 'no'
 read_from: full text
-status: to read
+status: not relevant
 zotero: true
 ---
 

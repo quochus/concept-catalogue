@@ -19,7 +19,7 @@ relates_to:
 - Concept catalogue
 my_relevance: ''
 read_from: abstract only
-status: to read
+status: must read
 zotero: true
 ---
 

@@ -26,13 +26,12 @@ Home.md                                       start page
 3. Concepts/0. Dictionary.md                  A-Z index of all concepts (bookmarked, always on top)
 3. Concepts/<Concept name>.md                 one page per concept
 4. Discuss/YYYY-MM-DD <topic>.md              one page per discussion (index: Discuss.md)
-5. Sources/<citekey>.md                       key works cited across several concepts only
-Templates/                                    Concept, Discussion, Source, Daily note
+Templates/                                    Concept, Discussion, Daily note
 Attachments/                                  images and files
 Claude setup/                                 skill copies, setup notes
 ```
 
-The numbers follow the workflow. Concept pages link out to their discussions and sources: a discussion page lists its concepts in `concepts:` and appears automatically under that concept's Discussions; evidence sits in the concept page itself. `2. New literature/` is filled and kept in step by a scheduled sync with the Reading Desk page (https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU); don't reorganise it by hand. A paper there is used in a concept only when Quoc asks.
+The numbers follow the workflow. Concept pages link out to their discussions: a discussion page lists its concepts in `concepts:` and appears automatically under that concept's Discussions. Evidence sits in the concept page itself; there is no Sources folder, and Zotero is the only library. `2. New literature/` is filled and kept in step by a scheduled sync with the Reading Desk page (https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU); don't reorganise it by hand. A paper there is used in a concept only when Quoc asks.
 
 The Dictionary (`3. Concepts/0. Dictionary.md`) is a Dataview table grouped by first letter, showing each concept's `short` definition, type, `related` concepts and status. It updates itself; keep every concept page's `short` (one line) and `related` frontmatter filled so the Dictionary reads well.
 
@@ -53,7 +52,7 @@ Priority order:
 4. At least one **distinct perspective**: a critical, Global South, or alternative framing that differs from the mainstream.
 5. Recent work (last ~3 years) that extends or contests the concept.
 
-Sources: Quoc's Zotero library first (when reachable), then the Consensus connector, OpenAlex, Semantic Scholar, and web search. Note any source not in Zotero so he can add it.
+Search Quoc's Zotero library first (when reachable), then the Consensus connector, OpenAlex, Semantic Scholar, and web search. Note any source not in Zotero so he can add it.
 
 Aim for 5–12 sources per entry. Quality over quantity.
 
@@ -99,7 +98,7 @@ Where the literature agrees with, extends, or challenges Quoc's first take. Spec
 (Dataview: LIST FROM [[]] AND "4. Discuss")
 
 ## Key sources
-- Author (Year). Title. — seminal / highly cited / review / distinct perspective / recent — [Zotero](zotero://select/library/items/<ITEMKEY>)  (or [[citekey]] when a Sources note exists)
+- Author (Year). Title. — seminal / highly cited / review / distinct perspective / recent — [Zotero](zotero://select/library/items/<ITEMKEY>)
 
 ## Evidence
 - Claim — "short quote" (p. N) [open](zotero://open-pdf/library/items/<ITEMKEY>?page=N)
@@ -107,28 +106,10 @@ Where the literature agrees with, extends, or challenges Quoc's first take. Spec
 
 ## Evidence rules
 
-- Every substantive claim in a concept page cites its source inline: `(Author Year, p. 12)`, and the page's **Evidence** section records, for each claim, a **short** exact quote (under 15 words), the precise locator (page, section, figure or table) and a Zotero link that opens the PDF at that page: `zotero://open-pdf/library/items/<ITEMKEY>?page=<N>` (or `zotero://select/library/items/<ITEMKEY>` when no PDF is attached).
-- Do **not** create a note per paper. Create a `5. Sources/<citekey>.md` note only for a key work cited in three or more concepts, or when Quoc asks; then link it as [[citekey]] and keep its quotes there.
+- Every substantive claim in a concept page cites its source inline: `(Author Year, p. 12)`. The page ends with a **Key sources** list (5–12 works, each with why it is included and a Zotero link) and an **Evidence** list that records, for each claim, a **short** exact quote (under 15 words), the precise locator (page, section, figure or table) and a Zotero link that opens the PDF at that page: `zotero://open-pdf/library/items/<ITEMKEY>?page=<N>` (or `zotero://select/library/items/<ITEMKEY>` when no PDF is attached).
+- No Sources folder and no note per paper. Do **not** create Zotero collections or tags for the catalogue; Zotero already has its own folders. Find the item key in Zotero for each link.
 - Figures and images: reference and describe them with figure number and page; do not copy them into the vault.
 - Never invent quotes, page numbers or citation counts. If a locator can't be verified, say so.
-
-## Source note template (key works only)
-
-```markdown
----
-type: source
-citekey: <citekey>
-zotero: zotero://select/library/items/<ITEMKEY>
-citations: <count> (source, date checked)
-why_included: seminal | highly cited | review | distinct perspective | recent
----
-# <Author (Year). Title.>
-
-Full reference.
-
-## Used for
-- [[Concept]]: claim — "short quote" (p. N) [open](zotero://open-pdf/library/items/<ITEMKEY>?page=N)
-```
 
 ## Discussions
 

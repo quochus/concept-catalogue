@@ -6,7 +6,7 @@ Papers found by the daily literature check (every morning around 6:00 Hanoi time
 - Papers marked read or not relevant are moved to `Archive/YYYY-MM/` (month found). Nothing is deleted.
 - Each note carries Claude's `relevance` (high/medium/low), `relates_to` (your projects) and your own `my_relevance`.
 - Papers are also added to Zotero, in the collection **_Daily new articles**.
-- A paper worth keeping for a concept entry can be turned into a proper source note in `5. Sources/` (ask Claude).
+- A paper is used in a concept entry only when you ask; its evidence then goes into that concept page's Key sources and Evidence lists.
 
 ## To read
 ```dataview

@@ -1,9 +1,11 @@
 ---
 type: concept
 short: ""
+aliases: []
 fields: []
 related: []
-status: draft
+tier: full
+status: first take
 created: {{date:YYYY-MM-DD}}
 last_reviewed: {{date:YYYY-MM-DD}}
 ---

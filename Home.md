@@ -1,6 +1,7 @@
 # Concept catalogue
 
 **[[0. Dictionary|Open the Dictionary]]** — all concepts A–Z
+**[[0. Backlog|Open the Backlog]]** — the 140 planned entries and their status ([[Drafting plan]])
 
 A place to explore relevant concepts and their implications.
 

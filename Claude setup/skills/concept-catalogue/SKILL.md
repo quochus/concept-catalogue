@@ -14,7 +14,7 @@ Quoc keeps a personal catalogue of concepts, frameworks, methods and approaches 
 | Vault (preferred) | `D:\Vaults\concept-catalogue` on the laptop, when linked. Work there with device_bash (`$HOME/mnt/concept-catalogue`). Obsidian Git commits and pushes every 10 minutes; never commit by hand there. |
 | Vault (fallback) | GitHub repo `quochus/concept-catalogue` (attach with add_repo). Commit with a clear message, e.g. `Add entry: Food environment`. |
 | Zotero | `C:\Users\QMNguyen\Zotero` (`zotero.sqlite`, `storage/<ATTACHMENTKEY>/<file>.pdf`; ~21,800 items, ~8,000 PDFs). Read-only for this work. |
-| CIAT work | Separate vault `D:\Vaults\ciat-work`. Never write catalogue content there; never copy CIAT project material into the catalogue. Link with `obsidian://open?vault=ciat-work&file=<URL-encoded path>`. |
+| CIAT work | Separate vault `D:\Vaults\ciat-work`. Never write catalogue content there; never copy CIAT project material into the catalogue. Link with `obsidian://open?vault=ciat-work&file=<URL-encoded path>` (`[[ ]]` links don't cross vaults). |
 | Instructions | `CLAUDE.md` at the vault root. Copies of this skill: `Claude setup/skills/concept-catalogue/SKILL.md` and `.claude/skills/concept-catalogue/SKILL.md`. When the skill changes, update both copies so all three match. |
 
 If the laptop is not linked, say so, work from the GitHub repo, and use external sources only; mark Zotero links as `(Zotero link pending)` and list those sources for Quoc to add.
@@ -25,14 +25,16 @@ If the laptop is not linked, say so, work from the GitHub repo, and use external
 Home.md                                  start page
 CLAUDE.md                                standing instructions
 1. Daily/YYYY-MM-DD.md                   daily notes: raw notes, ideas, first takes
-2. New literature/                       daily literature check (synced with the Reading Desk; don't reorganise by hand)
+2. New literature/                       daily literature check, synced with the Reading Desk
+                                         (https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU); don't reorganise by hand
     Papers/  Archive/YYYY-MM/            paper notes
     Concept updates/YYYY-MM-DD.md        suggested edits to concept pages
-3. Concepts/0. Dictionary.md             A–Z list of concept names (Dataview LIST; updates itself; don't edit)
+3. Concepts/0. Dictionary.md             A–Z list of linked concept names (Dataview LIST; updates itself; never edit; see §3)
 3. Concepts/0. Backlog.md                the planned list: cluster, type, wave, tier, status
 3. Concepts/<Concept name>.md            one page per concept
 4. Discuss/YYYY-MM-DD <topic>.md         one page per discussion (index: Discuss.md)
 Templates/                               Concept, Discussion, Daily note
+Attachments/                             images and files
 Claude setup/                            skill copies, Drafting plan.md, setup notes
 ```
 
@@ -60,6 +62,29 @@ Evidence lives in each concept page (Key sources + Evidence). There is no Source
 - **Language**: plain, short sentences, British spelling except in quotes and titles, "Viet Nam" in prose. No headings inside sections; bold lead-ins are fine.
 - **Claude's own synthesis** (a grouping, typology or proxy not taken from a source) is allowed but must be labelled in the text: *(Claude's grouping, not from a source)*.
 
+### The Dictionary (`3. Concepts/0. Dictionary.md`)
+Its current format (since 21 Oct 2026) is a plain A–Z list of linked concept names, grouped by first letter, with no definitions or other columns:
+````markdown
+---
+cssclasses: [dictionary]
+---
+# Dictionary
+
+```dataview
+LIST rows.file.link
+FROM "3. Concepts"
+WHERE type AND file.name != this.file.name
+SORT file.name ASC
+GROUP BY upper(substring(file.name, 0, 1)) AS Letter
+SORT Letter ASC
+```
+````
+- **Never edit this file** (no tables, definitions, extra columns or hand-written entries). It updates itself. If its format looks wrong or Quoc wants it changed, ask first; when he changes it, update this section to match.
+- A page is listed **only if** it sits in `3. Concepts/` (keep concept pages in the folder root, no subfolders) **and** has a non-empty `type`. So every concept page needs `type`, and no other file in `3. Concepts/` may have a `type` property (`0. Backlog.md` has none on purpose).
+- The letter group comes from the **first character of the file name**, so file names must start with a letter: no leading digits, quotes, brackets or "The"/"A" (write "Commons", not "The commons").
+- Stub pages (`status: first take`) have a `type`, so they appear in the Dictionary as soon as they are created. That is intended.
+- `short` and `related` are not shown in the Dictionary, but keep them filled anyway: they describe the page and link it to its neighbours.
+
 ## 4. Workflow for a new entry
 
 ### Step 0. Choose the concept
@@ -85,7 +110,7 @@ Required mix (full tier; compact needs the first three plus either 4 or 5):
 5. at least one **recent** work (last 3 years);
 6. **Viet Nam / ASEAN** evidence when it exists (search for it; say so if none is found).
 
-Search order: (a) Zotero, (b) OpenAlex (`paper-search` skill) for seminal works and citation counts, (c) Consensus or Semantic Scholar, (d) web search for institutional reports. Prefer sources that are in Zotero with a PDF. Any source not in Zotero goes in a "To add to Zotero" list in the final message.
+Search order: (a) Zotero, (b) OpenAlex (`paper-search` skill) for seminal works and citation counts (Google Scholar has no API), (c) Consensus or Semantic Scholar, (d) web search for institutional reports. Prefer sources that are in Zotero with a PDF. Any source not in Zotero goes in a "To add to Zotero" list in the final message.
 
 **Zotero lookup** (on the laptop, device_bash). Zotero locks the database, so copy first, then query the copy:
 ```bash
@@ -102,7 +127,7 @@ rows = c.execute(f"""select i.key, {F('title')}, {F('date')}, {F('DOI')},
 hits = [r for r in rows if r[1] and re.search(PATTERN, r[1], re.I)]
 ```
 - `i.key` (parent item key) → `zotero://select/library/items/<PARENTKEY>` (Key sources).
-- attachment key → `zotero://open-pdf/library/items/<ATTACHMENTKEY>?page=<N>` (Evidence). The PDF is at `$HOME/mnt/Zotero/storage/<ATTACHMENTKEY>/<path without "storage:">`.
+- attachment key → `zotero://open-pdf/library/items/<ATTACHMENTKEY>?page=<N>` (Evidence). If the item has no PDF, use `zotero://select/library/items/<PARENTKEY>` in Evidence too and give the locator in words. The PDF is at `$HOME/mnt/Zotero/storage/<ATTACHMENTKEY>/<path without "storage:">`.
 - Also search abstracts (`abstractNote`), creators (`creators.lastName`) and the relevant collection (`collections`, `collectionItems`); the `3. Food systems` and `4. Research methodology` collections match the backlog clusters.
 - Delete `~/zt` copies only if asked; never write to Zotero.
 
@@ -139,6 +164,7 @@ Set `status: draft`, `created` (keep the first-take date) and `last_reviewed` to
 ### Step 5. QA checklist (run before finishing; fix, don't report)
 - [ ] Frontmatter complete; `type`, `fields`, `tier`, `status` use allowed values; `short` ≤ 30 words.
 - [ ] Every `[[link]]` resolves to an existing page or a backlog name.
+- [ ] The page will show in the Dictionary under the right letter: it is in the root of `3. Concepts/`, has `type`, and its file name starts with a letter.
 - [ ] Source mix from Step 2 is met (or the gap is stated in the page).
 - [ ] Every quote is < 15 words, matches the PDF text, and has a printed page + correct `?page=` index.
 - [ ] Key sources use parent keys; Evidence links use attachment keys; no placeholder keys left.
@@ -155,6 +181,7 @@ grep -o '\[\[[^]|]*' "$f" | sort -u                      # links, then confirm e
 
 ### Step 6. Finish
 1. Update the concept's row in `0. Backlog.md`: status `draft`, and the progress line at the top.
+   Make the backlog name a link (`[[Name]]`) once the page exists, spelled exactly like the file name. Don't touch `0. Dictionary.md`; it picks the page up by itself.
 2. Add any newly needed concepts under "Proposed additions" in the backlog.
 3. Reply to Quoc in two or three lines: what was added, any gaps (e.g. no Viet Nam evidence, sources to add to Zotero), and a prompt to write "In my words".
 4. Local vault: leave committing to Obsidian Git. GitHub fallback: commit (`Add entry: <Name>`).

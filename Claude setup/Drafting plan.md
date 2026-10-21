@@ -30,7 +30,7 @@ By type: 78 concepts, 20 approaches, 19 frameworks, 23 methods.
 
 | Wave | Entries | Focus | At 5 a week, done by |
 |---|---|---|---|
-| 0 | 4 | Review the 4 drafts, write "In my words" | this week |
+| 0 | 4 | Upgrade the 4 drafts to the revised page standard (below), then review and write "In my words" | this week |
 | 1 | 32 (all full) | Thesis core + current CIAT outputs + missing links | early Dec 2026 |
 | 2 | 48 (15 full, 33 compact) | Next layer: governance, nutrition, methods | mid Feb 2027 |
 | 3 | 40 (mostly compact) | Broader context | mid Apr 2027 |
@@ -46,6 +46,14 @@ Within a wave, pick what current work needs first. Suggested opening order for w
 4. **Every ~4 weeks**: Claude checks the backlog against current work and proposes a reorder; nothing changes without Quoc's OK.
 
 The one-concept-a-day rule still holds for full entries; batching only the first takes is what makes 140 entries possible in about seven months.
+
+## Page standard (revised 21 Oct after Quoc's review of the first four drafts)
+
+- **Definitions** tell one story: origin → how and why the meaning changed → core definition → divergence → boundaries → a bold working definition.
+- **Features** follow a fixed logical order: components → mechanisms → conditions → measurement → debates (adapted for frameworks and methods).
+- **Implications** scale with the concept: broad concepts get an evidence overview from reviews, a table of 5–8 distinct cases and cross-case lessons; focused concepts get 2–4 cases and a synthesis; frameworks and methods get an applications table.
+- **Key sources** is the full reference list in APA 7, generated from Zotero with `Claude setup/scripts/zcat.py`.
+- **Evidence** is a table: claim, section, source, quote, locator, link; every quote is machine-checked against the PDF.
 
 ## Decisions for Quoc
 

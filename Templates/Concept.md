@@ -4,6 +4,7 @@ short: ""
 aliases: []
 fields: []
 related: []
+scope: focused
 tier: full
 status: first take
 created: {{date:YYYY-MM-DD}}
@@ -16,19 +17,21 @@ last_reviewed: {{date:YYYY-MM-DD}}
 
 
 ## Definitions
-Key definitions (who, how, when), main components, and links to related concepts.
+%% Narrative in 3–5 linked paragraphs, no bullets: origin and the problem it answered → how the meaning evolved and why → the current core definition and components → where definitions diverge and why → boundaries with neighbouring concepts. End with the working definition this page uses. %%
 
 ## Features
-Key findings that characterize the concept: scope, measurement, debates.
+%% One paragraph each, in this order, each leading into the next: **Components** → **Mechanisms** → **Conditions** → **Measurement** → **Debates**. Methods: Components → Procedure → Assumptions → Quality criteria → Critiques. %%
 
 ## Implications
-Cases from the literature and how the concept is understood or applied, including in Vietnam and ASEAN.
+%% Scaled to the concept. Broad: evidence overview from reviews → case table (5–8 distinct cases) → cross-case lessons. Focused: 2–4 cases showing the mechanism → what they show. Framework or method: applications table → lessons for use. %%
 
 ## Own works
-Where I have used, applied or contributed to the concept.
+%% Quoc's publications, reports and projects; CIAT work as obsidian:// links. "None yet" if none. %%
 
 ## Comparison with my first take
-Where the literature agrees with, extends or challenges my first take.
+- **Agrees.**
+- **Extends.**
+- **Challenges.**
 
 ## In my words
 *One sentence, written by me.*
@@ -41,7 +44,10 @@ LIST FROM [[]] AND "4. Discuss" SORT file.name DESC
 ```
 
 ## Key sources
-- Author (Year). Title. — why included (seminal / highly cited / review / distinct perspective / recent) — [Zotero](zotero://select/library/items/ITEMKEY)
+%% Every work cited on this page, APA 7, A–Z. Made with: zcat.py apa KEY ... %%
+- Author, A. A., & Author, B. B. (Year). Title of article. *Journal, Volume*(Issue), pages. https://doi.org/... — role — [Zotero](zotero://select/library/items/PARENTKEY)
 
 ## Evidence
-- Claim — "short quote" (p. N) [open](zotero://open-pdf/library/items/ITEMKEY?page=N)
+| ID | Claim (as stated on this page) | Section | Source | Quote | Locator | Open |
+|---|---|---|---|---|---|---|
+| E1 |  |  | Author (Year) | "" | p.  | [open](zotero://open-pdf/library/items/ATTACHMENTKEY?page=N) |

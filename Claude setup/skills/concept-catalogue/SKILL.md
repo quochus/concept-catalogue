@@ -30,12 +30,12 @@ CLAUDE.md                                standing instructions
     Papers/  Archive/YYYY-MM/            paper notes
     Concept updates/YYYY-MM-DD.md        suggested edits to concept pages
 3. Concepts/0. Dictionary.md             A–Z list of linked concept names (Dataview LIST; updates itself; never edit; see §3)
-3. Concepts/0. Backlog.md                the planned list: cluster, type, wave, tier, status
+3. Concepts/0. Backlog.md                the planned list: cluster, type, wave, scope, tier, status
 3. Concepts/<Concept name>.md            one page per concept
 4. Discuss/YYYY-MM-DD <topic>.md         one page per discussion (index: Discuss.md)
 Templates/                               Concept, Discussion, Daily note
 Attachments/                             images and files
-Claude setup/                            skill copies, Drafting plan.md, setup notes
+Claude setup/                            skill copies, Drafting plan.md, scripts/zcat.py (Zotero helper), setup notes
 ```
 
 Evidence lives in each concept page (Key sources + Evidence). There is no Sources folder; Zotero is the only library. Do not create Zotero collections or tags for the catalogue. A paper in `2. New literature/` is used in a concept only when Quoc asks.
@@ -50,6 +50,7 @@ Evidence lives in each concept page (Key sources + Evidence). There is no Source
   aliases: []
   fields: [<1–3 from the list below>]
   related: ["[[A]]", "[[B]]"]        # 3–6 links
+  scope: broad | focused
   tier: full | compact
   status: first take | draft | reviewed
   created: YYYY-MM-DD
@@ -58,7 +59,15 @@ Evidence lives in each concept page (Key sources + Evidence). There is no Source
 - **type**: *concept* = an idea or phenomenon; *framework* = a structured scheme of components or levels; *method* = a procedure for collecting or analysing data; *approach* = a way of acting or intervening that combines principles and practice.
 - **fields** (controlled list): food systems · sustainability transitions · innovation and scaling · agroecology · sustainable agriculture · value chains and markets · consumption and nutrition · food security and safety · governance and policy · institutions · natural resource management · research methods.
 - **related**: link only to pages that exist or to names in `0. Backlog.md`. If a needed concept is in neither, add it under "Proposed additions" in the backlog and tell Quoc.
-- **Tiers**: *full* = 8–12 sources, ~900–1,300 words of body text; *compact* = 5–7 sources, ~500–700 words. The backlog sets the tier.
+- **scope**: *broad* = an umbrella concept that covers many practices, actors or cases (e.g. Agroecology, Food system, Value chain, Food security, Institutions); *focused* = a specific principle, mechanism, tool or relation (e.g. Connectivity, Participatory guarantee systems, Willingness to pay). The backlog's Scope column sets it; scope decides the size and the shape of Implications.
+- **Size** (body sections Definitions → Comparison, excluding Key sources and Evidence):
+
+  | | Sources | Words |
+  |---|---|---|
+  | full, broad | 12–20 | 1,500–2,500 |
+  | full, focused | 8–12 | 1,000–1,600 |
+  | compact | 5–8 | 600–900 |
+- **In-text citations** are APA 7: `(Wezel et al., 2009, p. 503)`, `(Holt-Giménez & Altieri, 2013, p. 90)`, `Gliessman (2016, p. 188) describes…`. Use `PDF p. 6` when the document has no printed page numbers, and `Fig. 2, p. 9` / `Table 1, p. 7` for figures and tables.
 - **Language**: plain, short sentences, British spelling except in quotes and titles, "Viet Nam" in prose. No headings inside sections; bold lead-ins are fine.
 - **Claude's own synthesis** (a grouping, typology or proxy not taken from a source) is allowed but must be labelled in the text: *(Claude's grouping, not from a source)*.
 
@@ -82,13 +91,13 @@ SORT Letter ASC
 - **Never edit this file** (no tables, definitions, extra columns or hand-written entries). It updates itself. If its format looks wrong or Quoc wants it changed, ask first; when he changes it, update this section to match.
 - A page is listed **only if** it sits in `3. Concepts/` (keep concept pages in the folder root, no subfolders) **and** has a non-empty `type`. So every concept page needs `type`, and no other file in `3. Concepts/` may have a `type` property (`0. Backlog.md` has none on purpose).
 - The letter group comes from the **first character of the file name**, so file names must start with a letter: no leading digits, quotes, brackets or "The"/"A" (write "Commons", not "The commons").
-- Stub pages (`status: first take`) have a `type`, so they appear in the Dictionary as soon as they are created. That is intended.
+- Stub pages (`status: first take`) have a `type`, so the query lists them as soon as they are created. Leave it that way unless Quoc asks to hide stubs.
 - `short` and `related` are not shown in the Dictionary, but keep them filled anyway: they describe the page and link it to its neighbours.
 
 ## 4. Workflow for a new entry
 
 ### Step 0. Choose the concept
-1. If Quoc names a concept, use it. If it is not in `0. Backlog.md`, add it to the right cluster (with type, wave, tier) and tell him.
+1. If Quoc names a concept, use it. If it is not in `0. Backlog.md`, add it to the right cluster (with type, wave, scope, tier) and tell him.
 2. Otherwise read `0. Backlog.md` and propose the next one: lowest wave with `status: todo`, preferring what his current work needs (a concept named in today's daily note, or a missing `related` link). Propose, don't start.
 3. Check the Dictionary and backlog for overlap. If the concept is close to an existing page, ask whether to merge, narrow, or keep both, and note the boundary.
 
@@ -102,82 +111,113 @@ For a week's batch (the Monday routine in `Drafting plan.md`), list up to 5 conc
 Wait for the answer. As soon as it arrives, create the page from `Templates/Concept.md` with `status: first take`, the frontmatter filled from the backlog, and his words pasted **verbatim** under "My first take" with the date. Set the backlog status to `first take`. If he says skip, leave the section empty and note "(skipped)". Never write or paraphrase his first take.
 
 ### Step 2. Gather sources
-Required mix (full tier; compact needs the first three plus either 4 or 5):
+Required mix (compact needs 1–3 plus either 4 or 5; broad scope also needs 7):
 1. the **seminal** or originating work;
 2. at least one **highly cited** work or major **review/synthesis**;
 3. an **institutional framing** (HLPE, FAO, IFPRI, CGIAR, UN) where one shapes policy use;
 4. at least one **distinct perspective**: critical, Global South or alternative framing;
 5. at least one **recent** work (last 3 years);
-6. **Viet Nam / ASEAN** evidence when it exists (search for it; say so if none is found).
+6. **Viet Nam / ASEAN** evidence when it exists (search for it; say so if none is found);
+7. for **broad** concepts: at least one **systematic review, scoping review or meta-analysis** of cases or outcomes, plus primary case studies that span the concept's variety (see Implications).
 
 Search order: (a) Zotero, (b) OpenAlex (`paper-search` skill) for seminal works and citation counts (Google Scholar has no API), (c) Consensus or Semantic Scholar, (d) web search for institutional reports. Prefer sources that are in Zotero with a PDF. Any source not in Zotero goes in a "To add to Zotero" list in the final message.
 
-**Zotero lookup** (on the laptop, device_bash). Zotero locks the database, so copy first, then query the copy:
+**Zotero lookup** (on the laptop, device_bash) with the helper script `Claude setup/scripts/zcat.py`:
 ```bash
-mkdir -p ~/zt && cp "$HOME/mnt/Zotero/zotero.sqlite" "$HOME/mnt/Zotero/zotero.sqlite-wal" ~/zt/ 2>/dev/null
+Z="$HOME/mnt/concept-catalogue/Claude setup/scripts/zcat.py"
+python3 "$Z" search "agroecolog" --abs     # parent key, year, first author, title, PDF attachment key(s)
+python3 "$Z" pdf PARENTKEY                 # PDF path(s) for an item
 ```
-```python
-import sqlite3, re, os
-c = sqlite3.connect(os.path.expanduser('~/zt/zotero.sqlite'))
-F = lambda f: f"(select v.value from itemData d join fields x using(fieldID) join itemDataValues v using(valueID) where d.itemID=i.itemID and x.fieldName='{f}')"
-rows = c.execute(f"""select i.key, {F('title')}, {F('date')}, {F('DOI')},
-  (select group_concat(a2.key||'|'||coalesce(a.path,''),';') from itemAttachments a join items a2 on a2.itemID=a.itemID
-     where a.parentItemID=i.itemID and a.contentType='application/pdf')
-  from items i where i.itemID not in (select itemID from deletedItems)""").fetchall()
-hits = [r for r in rows if r[1] and re.search(PATTERN, r[1], re.I)]
-```
-- `i.key` (parent item key) → `zotero://select/library/items/<PARENTKEY>` (Key sources).
-- attachment key → `zotero://open-pdf/library/items/<ATTACHMENTKEY>?page=<N>` (Evidence). If the item has no PDF, use `zotero://select/library/items/<PARENTKEY>` in Evidence too and give the locator in words. The PDF is at `$HOME/mnt/Zotero/storage/<ATTACHMENTKEY>/<path without "storage:">`.
-- Also search abstracts (`abstractNote`), creators (`creators.lastName`) and the relevant collection (`collections`, `collectionItems`); the `3. Food systems` and `4. Research methodology` collections match the backlog clusters.
-- Delete `~/zt` copies only if asked; never write to Zotero.
+- The parent item key goes in Key sources (`zotero://select/library/items/<PARENTKEY>`); the attachment key goes in Evidence (`zotero://open-pdf/library/items/<ATTACHMENTKEY>?page=<N>`).
+- Also browse the matching Zotero collection: the `3. Food systems` and `4. Research methodology` collections line up with the backlog clusters.
+- The script copies `zotero.sqlite` to `~/zt` (Zotero locks the live file) and never writes to Zotero. Never create Zotero collections or tags for the catalogue.
 
-### Step 3. Extract evidence
-For each claim you intend to make:
-1. Open the PDF page text: `pdftotext -layout -f N -l N "<pdf>" -` (N = PDF page index, 1-based).
-2. Find the passage and copy a **short exact quote** (under 15 words). Confirm it with a normalised match (collapse whitespace, rejoin hyphenated line breaks, replace ligatures). If it doesn't match exactly, don't use it as a quote.
-3. Record two locators: the **printed page** (from the page header/footer) and the **PDF page index**. Cite the printed page in text, `(Author Year, p. 503)`; if the document has no printed numbers, use `(Author Year, PDF p. 6)`; for author manuscripts, `AAM p.`. The link's `?page=` is always the PDF page index.
+### Step 3. Build the Evidence table first
+Plan the page as a chain of claims before writing prose: list the claims each section will make (in order), then find a quote for each. The Evidence table is built in this step and the prose in Step 4 is written from it, so every claim and quote match.
+
+Helper script (on the laptop): `python3 "$HOME/mnt/concept-catalogue/Claude setup/scripts/zcat.py"` with `search`, `pdf`, `page`, `quote`, `apa`, `check` (run it without arguments for help). It copies the Zotero database first and never writes to Zotero.
+
+For each claim:
+1. Read the page: `zcat.py page ATTKEY N` (N = PDF page index, 1-based). It also guesses the printed page number from the header/footer and the article's page range.
+2. Copy a **short exact quote** (under 15 words) and confirm it: `zcat.py quote ATTKEY N "quote"` must print `OK`. If it prints `NOT FOUND`, don't use it as a quote.
+3. Record two locators: the **printed page** (confirm the script's guess against the page text; an `(est.)` guess must be checked) and the **PDF page index**. The Locator column and the in-text citation give the printed page; the link's `?page=` is always the PDF page index.
 4. Figures and tables: cite as `Fig. 2, p. 9` or `Table 1, p. 7`, describe in words; never copy images into the vault.
 5. For sources outside Zotero, quote only from text you have actually read; give the section or page you read it on.
 
 Never invent quotes, page numbers or citation counts. If a locator can't be verified, write `(locator not verified)`.
 
-### Step 4. Draft the page
-Follow `Templates/Concept.md` exactly (no H1; sections in this order):
+### Step 4. Write the page
+Follow `Templates/Concept.md` (no H1; sections in this order). The aim is a page that reads as an argument, not a set of snippets: every paragraph should follow from the one before.
 
-| Section | What goes in | Size (full / compact) |
-|---|---|---|
-| My first take | Quoc's words from Step 1. Never edited later. | — |
-| Definitions | Who defined it, how, when; main components; where definitions differ and why; boundary with neighbouring concepts ("not to be confused with"); `[[links]]`. | 150–350 / 100–200 words |
-| Features | Scope (includes/excludes), how it is measured or operationalised, key debates and critiques. Bold lead-in bullets. | 4–7 / 3–4 bullets |
-| Implications | Cases and uses from the literature; Viet Nam/ASEAN first where evidence exists. | 3–5 / 2–3 bullets |
-| Own works | Quoc's publications, manuscripts, reports, projects that use the concept. Find them in Zotero (author Nguyen, Q.) and, for CIAT work, link with obsidian:// URIs. Titles and links only; no CIAT content. Leave "None yet" if none. | list |
-| Comparison with my first take | Three bullets: **Agrees** / **Extends** / **Challenges**, each specific and citing a source. Address Quoc as "you". | 3 bullets |
-| In my words | Leave the placeholder. Never write it. | — |
-| Discussions | Keep the Dataview block from the template. | — |
-| Key sources | `- Author (Year). Title. — role (seminal / highly cited / review / institutional / distinct perspective / recent / Viet Nam) — [Zotero](zotero://select/library/items/PARENTKEY)` | 8–12 / 5–7 |
-| Evidence | `- Claim — "exact quote" (p. N) [open](zotero://open-pdf/library/items/ATTACHMENTKEY?page=PDFINDEX)` — one line per quoted claim, in the order claims appear. | — |
+**My first take.** Quoc's words from Step 1. Never edited later.
 
-Every substantive claim carries an inline citation `(Author Year, p. N)`, and every direct quote in the body also appears in Evidence.
+**Definitions: a narrative in 3–5 linked paragraphs, no bullets, no bold lead-ins.**
+1. *Origin*: who coined or formalised the concept, when, and what problem or debate it answered.
+2. *Evolution*: how the meaning shifted over time, and **why** each shift happened (a critique, a new problem, a change of scale, uptake by a new community). Use connecting phrases that show cause ("Because…", "This prompted…", "In response…").
+3. *Core definition and components*: the definition(s) most used today and the main components, linked with `[[ ]]` to their pages.
+4. *Divergence*: where definitions disagree and why (discipline, politics, scale, purpose).
+5. *Boundaries*: how it differs from neighbouring concepts ("not to be confused with…").
+End the section with one sentence in bold: **Working definition used here:** … (cited or marked as Claude's synthesis).
 
-Set `status: draft`, `created` (keep the first-take date) and `last_reviewed` to today, and fill `short` and `related`.
+**Features: one paragraph per element, in this fixed order; each paragraph ends by setting up the next.**
+- Concepts and approaches: **Components** (what it consists of) → **Mechanisms** (how and why it produces effects) → **Conditions** (what enables or constrains it; where it works and where it doesn't) → **Measurement** (indicators, tools, how studies operationalise it) → **Debates** (what is contested, by whom, and on what grounds).
+- Frameworks: **Structure** → **Logic** (how the parts relate) → **Assumptions** → **Operationalisation** → **Critiques**.
+- Methods: **Components** → **Procedure** (main steps) → **Assumptions** → **Quality criteria** → **Critiques and limits**.
+Use bold lead-ins for these labels only. Debates present both sides with sources, then say what remains unresolved.
+
+**Implications: shape and depth follow the concept's scope.**
+- *Broad concept or approach* (e.g. Agroecology):
+  1. **Evidence overview** (1–2 paragraphs): what systematic/scoping reviews and meta-analyses find: outcomes studied, direction and strength of effects, where evidence is thin.
+  2. **Case table** of 5–8 **distinct** cases. Pick them to span the concept's own typology (for agroecology: practice types such as diversification, agroforestry, crop–livestock integration, biological pest control; and initiative types such as farmer movements, territorial programmes, public policy, market institutions). Name the typology used. Include at least one Viet Nam/ASEAN case and at least one contested or unsuccessful case.
+     `| Case | Where, when | Type | What was done | Outcomes reported | Source |`
+  3. **Cross-case lessons** (1 paragraph): patterns across cases, conditions for success, and what the evidence does not show.
+- *Broad concept with a compact tier*: the same three parts, with 3–4 cases in the table.
+- *Focused concept or approach* (e.g. Connectivity): 2–4 cases that show the mechanism at work (bullets with bold lead-ins, or the case table), then one paragraph on what they show together. Add a review's findings if one exists.
+- *Framework*: an applications table, `| Study | Context | How the framework was used | Insight |` (3–5 rows), then a paragraph on how it has been adapted and the limits seen in use.
+- *Method*: an applications table (3–4 rows, same columns), then practical guidance: when to use it, data needed, common pitfalls.
+Viet Nam/ASEAN evidence comes first where it exists; say so when none was found.
+
+**Own works.** Quoc's publications, manuscripts, reports and projects that use the concept. Find them in Zotero (author Nguyen, Q.) and, for CIAT work, link with obsidian:// URIs. Titles and links only; no CIAT content. "None yet" if none.
+
+**Comparison with my first take.** Three bullets, **Agrees** / **Extends** / **Challenges**, each specific and citing a source. Address Quoc as "you".
+
+**In my words.** Leave the placeholder. Never write it.
+
+**Discussions.** Keep the Dataview block from the template.
+
+**Key sources: the complete reference list, APA 7.**
+- Every work cited anywhere on the page, and only those; alphabetical by first author, then year.
+- Generate Zotero items with `zcat.py apa KEY1 KEY2 …` (parent keys). It prints `- <APA reference> https://doi.org/… — ROLE — [Zotero](zotero://select/library/items/KEY)`. Replace `ROLE` with one or more of: seminal · highly cited · review · meta-analysis · institutional · distinct perspective · recent · Viet Nam/ASEAN · case.
+- Fix what the script can't: titles flagged `check: title may need sentence case` (sentence case for article and chapter titles, keeping proper nouns and the first word after a colon capitalised); missing publisher, report number or URL. Remove the flag comment.
+- Works not in Zotero: write the APA reference by hand and end with `(not in Zotero)` instead of the link.
+
+**Evidence: one table, one row per quoted claim, in page order.**
+```
+| ID | Claim (as stated on this page) | Section | Source | Quote | Locator | Open |
+|---|---|---|---|---|---|---|
+| E1 | The weight given to each meaning differs by country; Brazil stresses movement and practice | Definitions | Wezel et al. (2009) | "a stronger emphasis on movement and agricultural practice in Brazil" | p. 503 | [open](zotero://open-pdf/library/items/VS4NFSMA?page=1) |
+```
+- *Claim* restates the page's claim in one line, close to its wording, so the row can be found in the text. *Quote* is the exact supporting words (< 15 words; escape `|` as `\|`). *Locator* is the printed page (or `PDF p. N`, `Fig. 2, p. 9`). *Open* uses the **attachment** key and the PDF page index; for items without a PDF, use `[select](zotero://select/library/items/PARENTKEY)` and give the locator in words.
+- Every direct quote in the prose has a row. Each row supports one claim; a claim with two sources gets two rows.
+
+Finally set `status: draft`, keep `created` (the first-take date), set `last_reviewed` to today, and fill `short`, `related`, `scope` and `tier`.
 
 ### Step 5. QA checklist (run before finishing; fix, don't report)
-- [ ] Frontmatter complete; `type`, `fields`, `tier`, `status` use allowed values; `short` ≤ 30 words.
+- [ ] Frontmatter complete; `type`, `fields`, `scope`, `tier`, `status` use allowed values; `short` ≤ 30 words.
 - [ ] Every `[[link]]` resolves to an existing page or a backlog name.
 - [ ] The page will show in the Dictionary under the right letter: it is in the root of `3. Concepts/`, has `type`, and its file name starts with a letter.
-- [ ] Source mix from Step 2 is met (or the gap is stated in the page).
-- [ ] Every quote is < 15 words, matches the PDF text, and has a printed page + correct `?page=` index.
-- [ ] Key sources use parent keys; Evidence links use attachment keys; no placeholder keys left.
+- [ ] Source mix from Step 2 is met (or the gap is stated in the page); broad concepts have a review or meta-analysis.
+- [ ] Definitions read as one argument: origin → evolution (with reasons) → core → divergence → boundaries → bold working definition; no bullets.
+- [ ] Features follow the fixed order for the type, and each paragraph leads into the next.
+- [ ] Implications match the scope: broad = evidence overview + 5–8 distinct cases in a table (typology named, Viet Nam/ASEAN and a contested case included) + lessons; focused = 2–4 cases + synthesis; framework/method = applications table + guidance.
+- [ ] Key sources = every cited work and nothing else, APA 7, A–Z, roles filled, no `ROLE` or flag comments left.
+- [ ] Evidence is a table; every row has claim, section, source, quote (`zcat.py quote` → OK), locator and link.
+- [ ] `zcat.py check "3. Concepts/<Name>.md"` reports no MISSING, WRONG or WARN lines (parent keys in Key sources, attachment keys in Evidence, pages in range).
 - [ ] Claude's own synthesis is labelled.
-- [ ] Word count within the tier range (body sections only).
+- [ ] Word count within the size range for scope and tier (body sections only).
 - [ ] My first take and In my words untouched.
 
-A quick check of keys and links (run on the laptop):
-```bash
-cd "$HOME/mnt/concept-catalogue"; f="3. Concepts/<Name>.md"
-grep -o 'items/[A-Z0-9]\{8\}' "$f" | sort -u            # keys used, then confirm each exists in ~/zt/zotero.sqlite
-grep -o '\[\[[^]|]*' "$f" | sort -u                      # links, then confirm each is a page or in 0. Backlog.md
-```
+Links check (on the laptop): `grep -o '\[\[[^]|]*' "3. Concepts/<Name>.md" | sort -u`, then confirm each is a page or a backlog name.
 
 ### Step 6. Finish
 1. Update the concept's row in `0. Backlog.md`: status `draft`, and the progress line at the top.
@@ -186,9 +226,9 @@ grep -o '\[\[[^]|]*' "$f" | sort -u                      # links, then confirm e
 3. Reply to Quoc in two or three lines: what was added, any gaps (e.g. no Viet Nam evidence, sources to add to Zotero), and a prompt to write "In my words".
 4. Local vault: leave committing to Obsidian Git. GitHub fallback: commit (`Add entry: <Name>`).
 
-## 5. Review of a draft
+## 5. Review of a draft, and upgrading older pages
 
-When Quoc has read a draft and asks for changes, make only those changes. When he says it is reviewed (or writes "In my words"), set `status: reviewed`, update `last_reviewed`, and mark it `reviewed` in the backlog.
+When Quoc has read a draft and asks for changes, make only those changes. When he asks to bring an older page up to the current standard, rebuild it with Steps 2–5: keep "My first take", "In my words" and "Own works" exactly as they are, reuse quotes already verified (re-check them with `zcat.py quote`), add sources where the new scope rules need them, and rewrite Definitions, Features and Implications to the new structure. Say in the reply what changed. When he says it is reviewed (or writes "In my words"), set `status: reviewed`, update `last_reviewed`, and mark it `reviewed` in the backlog.
 
 ## 6. Discussions
 

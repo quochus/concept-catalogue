@@ -1,7 +1,7 @@
 # Claude setup
 
-Copies of everything Claude-side, so the setup can move to another Claude account (for example a CIAT work account).
+Everything Claude-side, so the setup can move to another Claude account (for example a CIAT work account).
 
-- `skills/` skill files. In a new account, add them under Settings > Skills (upload the folder or paste SKILL.md).
-- `.claude/skills/` at the vault root holds the same skill for Claudian inside Obsidian.
-- `CLAUDE.md` at the vault root holds the standing instructions for Claude in this vault.
+- `.claude/skills/concept-catalogue/SKILL.md` (at the vault root) is the one vault copy of the skill. Claudian reads it inside Obsidian; to set up a new account, upload that folder under Settings > Skills.
+- `CLAUDE.md` at the vault root points Claude to the skill.
+- `scripts/zcat.py` is the Zotero helper (search, APA references, quote checks). It only reads Zotero.

@@ -33,7 +33,7 @@ Claude setup/                                 skill copies, setup notes
 
 The numbers follow the workflow. Concept pages link out to their discussions: a discussion page lists its concepts in `concepts:` and appears automatically under that concept's Discussions. Evidence sits in the concept page itself; there is no Sources folder, and Zotero is the only library. `2. New literature/` is filled and kept in step by a scheduled sync with the Reading Desk page (https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU); don't reorganise it by hand. A paper there is used in a concept only when Quoc asks.
 
-The Dictionary (`3. Concepts/0. Dictionary.md`) is a Dataview table grouped by first letter, showing each concept's `short` definition, type, `related` concepts and status. It updates itself; keep every concept page's `short` (one line) and `related` frontmatter filled so the Dictionary reads well.
+The Dictionary (`3. Concepts/0. Dictionary.md`) is a Dataview list of linked concept names, grouped by first letter. It updates itself; don't add definitions or tables to it. Keep every concept page's `short` (one line) and `related` frontmatter filled anyway.
 
 ## Step 1: Ask for Quoc's first take (always, before drafting)
 

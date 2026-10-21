@@ -39,8 +39,7 @@
       "visibleModels": [
         "opus",
         "sonnet",
-        "haiku",
-        "claude-haiku-4-5-20251001"
+        "haiku"
       ],
       "modelAliases": {},
       "environmentVariables": "",
@@ -49,8 +48,8 @@
       "selectedModels": [
         {
           "value": "opus",
-          "label": "Opus 5.5",
-          "description": "For complex work and everyday tasks",
+          "label": "Opus",
+          "description": "Opus 5.5 · Best for everyday, complex tasks",
           "resolvedModel": "claude-opus-5-5",
           "reasoningMetadataResolved": true,
           "supportedEffortLevels": [
@@ -63,8 +62,8 @@
         },
         {
           "value": "sonnet",
-          "label": "Sonnet 5.5",
-          "description": "Most efficient for simpler tasks",
+          "label": "Sonnet",
+          "description": "Sonnet 5.5 · Efficient for routine tasks",
           "resolvedModel": "claude-sonnet-5-5",
           "reasoningMetadataResolved": true,
           "supportedEffortLevels": [
@@ -77,8 +76,8 @@
         },
         {
           "value": "haiku",
-          "label": "Haiku 5.5",
-          "description": "Fastest for quick answers",
+          "label": "Haiku",
+          "description": "Haiku 5.5 · Fastest for quick answers",
           "resolvedModel": "claude-haiku-5-5",
           "reasoningMetadataResolved": true,
           "supportedEffortLevels": [
@@ -88,14 +87,6 @@
             "xhigh",
             "max"
           ]
-        },
-        {
-          "value": "claude-haiku-4-5-20251001",
-          "label": "Haiku 4.5",
-          "description": "Fastest for quick answers",
-          "resolvedModel": "claude-haiku-4-5-20251001",
-          "reasoningMetadataResolved": true,
-          "supportedEffortLevels": []
         }
       ]
     },

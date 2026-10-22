@@ -208,7 +208,7 @@ def npages(path):
 
 def norm(s):
     s = unicodedata.normalize("NFKC", s)
-    s = s.replace("­", "")
+    s = re.sub("\u00ad\\s*", "", s)  # soft hyphen, incl. at a line break
     s = re.sub(r"-\s*\n\s*", "", s)
     s = s.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"').replace("–", "-").replace("—", "-")
     return re.sub(r"\s+", " ", s).strip().lower()

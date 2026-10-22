@@ -195,9 +195,9 @@ def apa(key):
 
 
 # ---------- PDF text ----------
-def pagetext(path, n):
-    return subprocess.run(["pdftotext", "-layout", "-f", str(n), "-l", str(n), path, "-"],
-                          capture_output=True, text=True).stdout
+def pagetext(path, n, layout=True):
+    args = ["pdftotext"] + (["-layout"] if layout else []) + ["-f", str(n), "-l", str(n), path, "-"]
+    return subprocess.run(args, capture_output=True, text=True).stdout
 
 
 def npages(path):
@@ -271,13 +271,13 @@ def main():
     elif cmd == "quote":
         p = pdfpath(a[0]); n = int(a[1]); q = a[2]
         t = pagetext(p, n)
-        ok = norm(q) in norm(t)
+        ok = norm(q) in norm(t) or norm(q) in norm(pagetext(p, n, layout=False))  # raw mode handles two-column pages
         words = len(q.split())
         print(("OK" if ok else "NOT FOUND") + f" | {words} words" + (" | TOO LONG (must be < 15)" if words >= 15 else "")
               + f" | printed page guess: {printed_guess(t, page_range(a[0]), n)}")
         if not ok:
             for m in (n - 1, n + 1):
-                if m >= 1 and norm(q) in norm(pagetext(p, m)):
+                if m >= 1 and (norm(q) in norm(pagetext(p, m)) or norm(q) in norm(pagetext(p, m, layout=False))):
                     print(f"  found on PDF page {m} instead")
     elif cmd == "check":
         txt = open(a[0], encoding="utf-8").read()

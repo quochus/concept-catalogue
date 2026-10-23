@@ -1,33 +1,36 @@
 # Backlog
 
-The final concept list (245 entries in 11 clusters), agreed in Quoc's review on 21 Oct 2026, and the plan for working through it. Claude picks the next entry from here and updates **Status** after drafting. Quoc's order and decisions win; changes go through the [Backlog review](https://claude.ai/artifact/CrS3qDabd1wdxPkgcGAuyP) page or a note to Claude.
+The final concept list (248 entries in 11 clusters), agreed in Quoc's review on 21 Oct 2026, and the plan for working through it. Claude picks the next entry from here and updates **Status** after drafting. Quoc's order and decisions win; changes go through the [Backlog review](https://claude.ai/artifact/CrS3qDabd1wdxPkgcGAuyP) page or a note to Claude.
 
 ## Plan
 
-Pace: one full entry or two compact entries per working day, five days a week, starting Monday 26 Oct 2026.
+Pace: one full entry or two compact entries per working day, five days a week. Wave 1 now starts with the **IP1+ block** (decided 22 Oct 2026), then the thesis core.
 
 | Wave | Entries | Focus | Done by (no breaks) |
 |---|---|---|---|
 | 0 | 4 upgraded (22 Oct) | Agroecology, Connectivity, Scaling agroecology, Values of sustainable agri-food products: rebuilt to the page standard; Quoc reviews and writes "In my words" | 30 Oct 2026 |
-| 1 | 37 (36 full, 1 compact) | Thesis core, transitions theory, midstream and markets, institutions, governance | 22 Dec 2026 |
-| 2 | 90 (23 full, 67 compact) | Food system framework dimensions, nutrition, standards, market systems and incentives, gender, agroforestry, climate–food–health nexus, power and agency, innovation and scaling, methods | 9 Mar 2027 |
-| 3 | 97 (6 full, 91 compact) | Food system activities, nutrition outcomes, NRM, carbon and corporate sustainability, inclusion, climate mobility, assessment methods | 20 May 2027 |
-| 4 | 17 (compact) | Taken up when a piece of work needs them | 2 Jun 2027 |
+| 1a | 26 IP1+ (10 full, 16 compact) | Regenerative and conservation agriculture, scaling, intermediaries and market systems, trust and standards, incentives and consumers, IP1+ methods (marked "IP1+" in the Review column) | 13 Nov 2026 |
+| 1b | 31 thesis core (30 full, 1 compact) | Food systems, transitions theory, midstream and markets, institutions, governance | 29 Dec 2026 |
+| 2 | 76 (19 full, 57 compact) | Food system framework dimensions, nutrition, standards, gender, agroforestry, climate–food–health nexus, power and agency, innovation, methods | 5 Mar 2027 |
+| 3 | 94 (6 full, 88 compact) | Food system activities, nutrition outcomes, NRM, carbon and corporate sustainability, inclusion, climate mobility, assessment methods | 14 May 2027 |
+| 4 | 17 (compact) | Taken up when a piece of work needs them | 27 May 2027 |
 
 Allow two to three weeks for Christmas and Tết: realistic finish **late June 2027**.
 
-**Wave 1, week by week** (each week builds on the one before; the Monday first-take batch is the five concepts of that week):
+**Wave 1, week by week** (each week builds on the one before; the Monday first-take batch is that week's concepts):
 
 | Week of | Concepts |
 |---|---|
-| 2 Nov | A01 Food system · A04 Food system activities · A02 Food systems approach · G03 Food systems transformation · G02 Food system transitions |
-| 9 Nov | G01 Sustainability transitions · G05 Multi-level perspective · G06 Socio-technical regime · G07 Niche · G08 Socio-technical landscape |
-| 16 Nov | G11 Strategic niche management · G10 Transition pathways · G18 Intermediaries · G19 Social practice theory · G20 Leverage points |
-| 23 Nov | A08 Co-existence of food systems · C18 Missing middle · C19 Informal food sector · C20 Supermarket revolution · C09 Value chain |
-| 30 Nov | D01 Alternative food networks · D02 Short food supply chains · D06 Proximity · D08 Trust in food chains · D18 Participatory guarantee systems |
-| 7 Dec | I06 Institutions · I07 Institutional change · I09 Mechanisms · I10 Mechanism-based explanation · G22 Barriers to food system transformation |
-| 14 Dec | I01 Food system governance · I02 Multi-level governance · I05 National food systems pathways · E01 Food environment · F08 Food safety |
-| 21 Dec | E11 Willingness to pay · B10 Regenerative agriculture |
+| 22 Oct (now) | B10 Regenerative agriculture · B19 Conservation agriculture · H06 Scaling · H05 Innovation bundling · G18 Intermediaries · C25 Market linkages · C26 Market systems · C27 Market systems development · C29 Inclusive value chains |
+| 26 Oct | C14 Farmer organisations · C16 Cooperatives · D11 Credence attributes · D08 Trust in food chains · D18 Participatory guarantee systems · D16 Sustainability certification |
+| 2 Nov | D10 Values-based supply chains · J15 Relational values · I24 Incentives · E01 Food environment · E11 Willingness to pay |
+| 9 Nov | E25 Nudges · E08 Consumer behaviour · E26 Intention–behaviour gap · I27 Public procurement · K02 Scoping review · K18 Discrete choice experiments |
+| 16 Nov | A01 Food system · A04 Food system activities · A02 Food systems approach · G03 Food systems transformation · G02 Food system transitions |
+| 23 Nov | G01 Sustainability transitions · G05 Multi-level perspective · G06 Socio-technical regime · G07 Niche · G08 Socio-technical landscape |
+| 30 Nov | G11 Strategic niche management · G10 Transition pathways · G19 Social practice theory · G20 Leverage points · A08 Co-existence of food systems |
+| 7 Dec | C18 Missing middle · C19 Informal food sector · C20 Supermarket revolution · C09 Value chain · D01 Alternative food networks |
+| 14 Dec | D02 Short food supply chains · D06 Proximity · I06 Institutions · I07 Institutional change · I09 Mechanisms |
+| 21 Dec | I10 Mechanism-based explanation · G22 Barriers to food system transformation · I01 Food system governance · I02 Multi-level governance · I05 National food systems pathways · F08 Food safety |
 
 **Weekly rhythm.** Monday (~10 min): Quoc writes first takes for the week's five concepts in the daily note. Monday–Friday: Claude drafts (one full or two compact a day), runs the QA checklist and updates this list. Weekend (~20 min): Quoc reviews the week's drafts and writes "In my words". Every ~4 weeks Claude proposes a reorder against current work; wave 2 onwards is ordered then.
 
@@ -44,7 +47,7 @@ Allow two to three weeks for Christmas and Tết: realistic finish **late June 2
 - **Review**: Y = confirmed by Quoc (21 Oct 2026), with his notes, aliases and cross-references
 - **Status**: `todo` → `first take` → `draft` → `reviewed`
 
-Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 2026), awaiting Quoc's review · 0 reviewed · 241 to do
+Progress: 248 concepts · 13 drafted (4 upgraded + 9 IP1+ new, 22 Oct 2026), awaiting Quoc's review · 0 reviewed · 235 to do · IP1+ week 1 done 22 Oct
 
 ## A. Food systems: concepts and frameworks
 
@@ -83,7 +86,7 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | B07 | Sustainable intensification | concept | 3 | broad | C | Deep | Pretty 1997; Godfray et al. 2010; Pretty et al. 2018 | Y | todo |
 | B08 | [[Agroecology]] | approach | 0 | broad | F | Deep | — | Y | draft (upgraded 22 Oct) |
 | B09 | [[Scaling agroecology]] | concept | 0 | focused | F | Med | — | Y | draft (upgraded 22 Oct) |
-| B10 | Regenerative agriculture | approach | 1 | focused | F | Med | Newton et al. 2020; Giller et al. 2021 | Y | todo |
+| B10 | [[Regenerative agriculture]] | approach | 1 | focused | F | Med | Newton et al. 2020; Giller et al. 2021 | Y — IP1+ | draft (22 Oct) |
 | B11 | Organic agriculture | approach | 2 | broad | C | Deep | IFOAM principles 2005; Seufert & Ramankutty 2017 | Y | todo |
 | B12 | Good agricultural practices | approach | 2 | focused | C | Deep | FAO 2003; VietGAP studies | Y | todo |
 | B13 | Climate-smart agriculture | approach | 3 | broad | C | Deep | FAO 2010; Lipper et al. 2014 | Y | todo |
@@ -92,6 +95,7 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | B16 | Circular economy in agri-food | concept | 4 | focused | C | Med | Jurgilevich et al. 2016 | Y | todo |
 | B17 | Carbon sequestration | concept | 3 | focused | C | Med | Lal 2004 (soil carbon); Paustian et al. 2016 | Y — aliases: carbon capture, soil carbon sequestration | todo |
 | B18 | Agroforestry | approach | 2 | broad | C | Med | Nair 1993; World Agroforestry (ICRAF); Mouratiadou et al. 2024 | Y — see B08 Agroecology | todo |
+| B19 | [[Conservation agriculture]] | approach | 1 | focused | C | Med | Kassam et al. 2009; Giller et al. 2009 (critique); Castella et al. 2022 (Laos) | Y — IP1+; cover crops, direct seeding on mulch; see B10 Regenerative agriculture | draft (22 Oct) |
 
 ## C. Food supply chains and markets
 
@@ -110,9 +114,9 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | C11 | Value chain upgrading | concept | 2 | focused | C | Med | Humphrey & Schmitz 2002 | Y | todo |
 | C12 | Transaction cost economics | framework | 3 | focused | C | Thin | Williamson 1985; Hobbs 1996 | Y | todo |
 | C13 | Contract farming | approach | 3 | focused | C | Med | Eaton & Shepherd 2001; Bellemare & Bloem 2018 | Y | todo |
-| C14 | Farmer organisations | concept | 3 | focused | C | Med | Bernard & Spielman 2009 | Y | todo |
+| C14 | Farmer organisations | concept | 1 | focused | C | Med | Bernard & Spielman 2009 | Y — IP1+ | todo |
 | C15 | Collective action | concept | 3 | focused | C | Deep | Ostrom 1990; Markelova et al. 2009 | Y | todo |
-| C16 | Cooperatives | concept | 3 | focused | C | Deep | ICA 1995 principles; Bijman et al. | Y | todo |
+| C16 | Cooperatives | concept | 1 | focused | C | Deep | ICA 1995 principles; Bijman et al. | Y — IP1+ | todo |
 | C17 | Agri-food MSMEs | concept | 2 | focused | F | Deep | Nordhagen et al. 2021 (GAIN); Reardon et al. | Y | todo |
 | C18 | Missing middle | concept | 1 | focused | F | Deep | Reardon 2015 (hidden middle); Reardon et al. 2012; Quoc's thesis | Y | todo |
 | C19 | Informal food sector | concept | 1 | focused | F | Deep | Skinner & Haysom 2016; Battersby & Watson 2019 | Y | todo |
@@ -121,11 +125,11 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | C22 | Wet markets | concept | 2 | focused | C | Med | Wertheim-Heck et al. 2015; Zhong et al. | Y — a type of Traditional markets C21 | todo |
 | C23 | Urban food systems | concept | 2 | focused | C | Deep | Morgan & Sonnino 2010; Battersby & Watson 2019 | Y | todo |
 | C24 | City region food systems | framework | 3 | focused | C | Med | FAO & RUAF 2016; Blay-Palmer et al. 2018 | Y | todo |
-| C25 | Market linkages | concept | 2 | focused | C | Med | Shepherd 2007 (FAO); Barrett 2008 | Y — alias: linking farmers to markets; see C26–C27 | todo |
-| C26 | Market systems | concept | 2 | broad | C | Med | Springfield Centre (M4P operational guide) | Y — the web of core exchange, supporting functions and rules around a market | todo |
-| C27 | Market systems development | approach | 2 | focused | F | Thin | Springfield Centre 2015 (M4P guide); DCED results standard | Y — aliases: MSD, making markets work for the poor (M4P) | todo |
+| C25 | [[Market linkages]] | concept | 1 | focused | C | Med | Shepherd 2007 (FAO); Barrett 2008 | Y — IP1+; alias: linking farmers to markets; see C26–C27 | draft (22 Oct) |
+| C26 | [[Market systems]] | concept | 1 | broad | C | Med | Springfield Centre (M4P operational guide) | Y — IP1+; the web of core exchange, supporting functions and rules around a market | draft (22 Oct) |
+| C27 | [[Market systems development]] | approach | 1 | focused | F | Thin | Springfield Centre 2015 (M4P guide); DCED results standard | Y — IP1+; aliases: MSD, making markets work for the poor (M4P) | draft (22 Oct) |
 | C28 | Market failure | concept | 3 | focused | C | Thin | Akerlof 1970; Dorward et al. 2005 (coordination failure) | Suggested by Claude — mark N on the review page if not wanted | todo |
-| C29 | Inclusive value chains | concept | 3 | focused | C | Med | Vorley et al.; German et al. 2020 | Suggested by Claude — mark N on the review page if not wanted; alias: inclusive business models | todo |
+| C29 | [[Inclusive value chains]] | concept | 1 | focused | C | Med | Vorley et al.; German et al. 2020 | IP1+; Suggested by Claude — mark N on the review page if not wanted; alias: inclusive business models | draft (22 Oct) |
 
 ## D. Alternative food networks, trust and standards
 
@@ -138,17 +142,17 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | D05 | [[Connectivity]] | concept | 0 | focused | F | Med | — | Y | draft (upgraded 22 Oct) |
 | D06 | Proximity | concept | 1 | focused | F | Med | Boschma 2005; Torre & Rallet 2005; Eriksen 2013 | Y | todo |
 | D07 | Embeddedness | concept | 2 | focused | C | Med | Granovetter 1985; Hinrichs 2000; Sonnino & Marsden 2006 | Y | todo |
-| D08 | Trust in food chains | concept | 1 | focused | F | Deep | Kjærnes 2012; Meijboom et al. 2006 | Y | todo |
+| D08 | Trust in food chains | concept | 1 | focused | F | Deep | Kjærnes 2012; Meijboom et al. 2006 | Y — IP1+ | todo |
 | D09 | [[Values of sustainable agri-food products]] | concept | 0 | focused | F | Med | — | Y | draft (upgraded 22 Oct) |
-| D10 | Values-based supply chains | concept | 2 | focused | C | Med | Stevenson & Pirog 2008; Peterson et al. 2022 | Y | todo |
-| D11 | Credence attributes | concept | 2 | focused | C | Thin | Darby & Karni 1973; Nelson 1970 | Y | todo |
+| D10 | Values-based supply chains | concept | 1 | focused | C | Med | Stevenson & Pirog 2008; Peterson et al. 2022 | Y — IP1+ | todo |
+| D11 | Credence attributes | concept | 1 | focused | C | Thin | Darby & Karni 1973; Nelson 1970 | Y — IP1+ | todo |
 | D12 | Transparency | concept | 2 | focused | C | Deep | Gardner et al. 2019; Mol 2015 | Y — Traceability is D13 | todo |
 | D13 | Traceability | concept | 2 | focused | C | Deep | Golan et al. 2004; Opara 2003 | Y | todo |
 | D14 | Food standards | concept | 2 | focused | F | Deep | Henson & Reardon 2005; Henson & Humphrey 2010 | Y | todo |
 | D15 | Certification | concept | 2 | focused | C | Deep | Raynolds 2004; Tayleur et al. 2017 | Y | todo |
-| D16 | Sustainability certification | concept | 2 | focused | F | Deep | Tayleur et al. 2017; Meemken et al. 2021 | Y — alias: eco-labelling | todo |
+| D16 | Sustainability certification | concept | 1 | focused | F | Deep | Tayleur et al. 2017; Meemken et al. 2021 | Y — IP1+; alias: eco-labelling | todo |
 | D17 | Food labelling | concept | 2 | focused | C | Deep | Grunert & Wills 2007 | Y | todo |
-| D18 | Participatory guarantee systems | approach | 1 | focused | F | Deep | IFOAM; Home et al. 2017; Loconto & Hatanaka 2018 | Y | todo |
+| D18 | Participatory guarantee systems | approach | 1 | focused | F | Deep | IFOAM; Home et al. 2017; Loconto & Hatanaka 2018 | Y — IP1+ | todo |
 | D19 | Corporate social responsibility | concept | 2 | focused | C | Thin | Carroll 1991; Hartmann 2011 (CSR in the food sector) | Y — alias: CSR; see I13 Responsibility | todo |
 | D20 | Environmental, social and governance criteria | framework | 3 | focused | C | Thin | (search: ESG in agri-food firms and finance) | Y — alias: ESG | todo |
 | D21 | Greenwashing | concept | 3 | focused | C | Thin | Delmas & Burbano 2011; Lyon & Montgomery 2015 | Y | todo |
@@ -157,17 +161,17 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 
 | ID | Concept | Type | Wave | Scope | Tier | Zotero | Anchors (verify) | Review | Status |
 |---|---|---|---|---|---|---|---|---|---|
-| E01 | Food environment | concept | 1 | broad | F | Deep | Swinburn et al. 2013; Turner et al. 2018; Downs et al. 2020 | Y | todo |
+| E01 | Food environment | concept | 1 | broad | F | Deep | Swinburn et al. 2013; Turner et al. 2018; Downs et al. 2020 | Y — IP1+ | todo |
 | E02 | Foodscapes | concept | 3 | focused | C | Med | Mikkelsen 2011; Vonthron, Perrin & Soulard 2020 | Y | todo |
 | E03 | Food promotion and marketing | concept | 3 | focused | C | Deep | HLPE 2017; Swinburn et al. 2013 | Y — alias: food advertising | todo |
 | E04 | Food quality | concept | 3 | focused | C | Med | HLPE 2017; Grunert 2005 | Y | todo |
 | E05 | Convenience (food environment) | concept | 3 | focused | C | Med | Turner et al. 2018 | Y | todo |
 | E06 | Desirability (food environment) | concept | 3 | focused | C | Med | Turner et al. 2018 | Y | todo |
 | E07 | Food consumption | concept | 2 | broad | C | Deep | Warde 2016; HLPE 2017 | Y | todo |
-| E08 | Consumer behaviour | concept | 2 | broad | C | Deep | HLPE 2017; Grunert 2005 | Y | todo |
+| E08 | Consumer behaviour | concept | 1 | broad | C | Deep | HLPE 2017; Grunert 2005 | Y — IP1+ | todo |
 | E09 | Food choice | concept | 3 | focused | C | Med | Furst et al. 1996; Sobal & Bisogni 2009 | Y | todo |
 | E10 | Theory of planned behaviour | framework | 3 | focused | C | Thin | Ajzen 1991 | Y | todo |
-| E11 | Willingness to pay | method | 1 | focused | F | Med | Lusk & Shogren 2007; Li & Kallas 2021; Nguyen et al. 2019 (own) | Y | todo |
+| E11 | Willingness to pay | method | 1 | focused | F | Med | Lusk & Shogren 2007; Li & Kallas 2021; Nguyen et al. 2019 (own) | Y — IP1+ | todo |
 | E12 | Sustainable consumption | concept | 2 | focused | C | Deep | Spaargaren 2003; Reisch et al. | Y | todo |
 | E13 | Diets | concept | 2 | broad | C | Deep | HLPE 2017; Willett et al. 2019 | Y | todo |
 | E14 | Nutrition transition | concept | 2 | focused | C | Med | Popkin 1993; Popkin, Adair & Ng 2012 | Y | todo |
@@ -181,7 +185,8 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | E22 | Neglected and underutilised species | concept | 4 | focused | C | Deep | Padulosi et al. 2013 | Y — alias: NUS | todo |
 | E23 | Food heritage | concept | 4 | focused | C | Thin | (search; Zotero: Food culture, identity & heritage) | Y | todo |
 | E24 | Indigenous food systems | concept | 4 | focused | C | Deep | Kuhnlein et al. 2009; Zotero "Seminal papers" item | Y | todo |
-| E25 | Nudges | approach | 2 | focused | C | Med | Thaler & Sunstein 2008; Cadario & Chandon 2020 (meta-analysis) | Y — alias: choice architecture; see E09 Food choice | todo |
+| E25 | Nudges | approach | 1 | focused | C | Med | Thaler & Sunstein 2008; Cadario & Chandon 2020 (meta-analysis) | Y — IP1+; alias: choice architecture; see E09 Food choice | todo |
+| E26 | Intention–behaviour gap | concept | 1 | focused | C | Thin | Sheeran 2002; Vermeir & Verbeke 2006 (sustainable food) | Y — IP1+; aliases: attitude–behaviour gap, say–do gap; see E11 Willingness to pay | todo |
 
 ## F. Food security, nutrition and health
 
@@ -230,7 +235,7 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | G15 | Path dependence | concept | 2 | focused | C | Med | David 1985; Arthur 1989; Pierson 2000 | Y | todo |
 | G16 | Regime destabilisation and exnovation | concept | 3 | focused | C | Med | Turnheim & Geels 2012; David 2017 | Y | todo |
 | G17 | Agency and power in transitions | concept | 2 | focused | F | Deep | Avelino & Rotmans 2009; Avelino 2017 | Y | todo |
-| G18 | Intermediaries | concept | 1 | focused | F | Deep | Howells 2006; Klerkx & Leeuwis 2009; Kivimaa et al. 2019 | Y | todo |
+| G18 | [[Intermediaries]] | concept | 1 | focused | F | Deep | Howells 2006; Klerkx & Leeuwis 2009; Kivimaa et al. 2019 | Y — IP1+ | draft (22 Oct) |
 | G19 | Social practice theory | approach | 1 | focused | F | Deep | Reckwitz 2002; Shove, Pantzar & Watson 2012; Warde 2005 | Y | todo |
 | G20 | Leverage points | framework | 1 | focused | F | Med | Meadows 1999; Abson et al. 2017; Fischer & Riechers 2019 | Y | todo |
 | G21 | Just transitions | concept | 2 | focused | C | Med | Tribaldos & Kortetmäki 2022; Blattner 2020 | Y | todo |
@@ -245,8 +250,8 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | H02 | System innovation | concept | 3 | focused | C | Med | Elzen, Geels & Green 2004 | Y | todo |
 | H03 | Agricultural extension | approach | 2 | focused | F | Deep | Anderson & Feder 2004; Birner et al. 2009 | Y — alias: extension services | todo |
 | H04 | Diffusion pathways | concept | 2 | focused | C | Deep | Rogers 2003 (Diffusion of innovations) | Y — alias: diffusion of innovations | todo |
-| H05 | Innovation bundling | concept | 2 | focused | C | Med | Barrett et al. 2022 (bundled innovations); Sartas et al. 2020 | Y | todo |
-| H06 | Scaling | concept | 2 | broad | F | Deep | Moore, Riddell & Vocisano 2015; Wigboldus et al. 2016; Sartas et al. 2020 (scaling readiness) | Y | todo |
+| H05 | [[Innovation bundling]] | concept | 1 | focused | C | Med | Barrett et al. 2022 (bundled innovations); Sartas et al. 2020 | Y — IP1+ | draft (22 Oct) |
+| H06 | [[Scaling]] | concept | 1 | broad | F | Deep | Moore, Riddell & Vocisano 2015; Wigboldus et al. 2016; Sartas et al. 2020 (scaling readiness) | Y — IP1+ | draft (22 Oct) |
 | H07 | Scaling science | approach | 2 | focused | C | Thin | Wigboldus et al. 2016; Sartas et al. 2020; Schut et al. 2020 | Y | todo |
 | H08 | Theory of change | method | 2 | focused | C | Med | Weiss 1995; Vogel 2012 | Y | todo |
 | H09 | Impact pathways | method | 3 | focused | C | Med | Douthwaite et al. 2003 | Y | todo |
@@ -282,9 +287,10 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | I21 | Carbon markets | concept | 3 | focused | C | Thin | (search: voluntary carbon markets in agriculture) | Y | todo |
 | I22 | Carbon credits | concept | 3 | focused | C | Thin | (search: agricultural carbon credits; insetting) | Y — aliases: carbon offsets, insetting | todo |
 | I23 | Measurement, reporting and verification | method | 3 | focused | C | Thin | (search: MRV for agriculture, IPCC guidelines) | Y — alias: MRV | todo |
-| I24 | Incentives | concept | 2 | focused | F | Deep | (search: market and policy incentives for sustainable food; consumer incentives) | Y — economic, regulatory and social incentives; see I25–I26, J18 | todo |
+| I24 | Incentives | concept | 1 | focused | F | Deep | (search: market and policy incentives for sustainable food; consumer incentives) | Y — IP1+; economic, regulatory and social incentives; see I25–I26, J18 | todo |
 | I25 | Repurposing agricultural support | approach | 3 | focused | C | Med | FAO, UNDP & UNEP 2021 (A multi-billion-dollar opportunity) | Suggested by Claude — mark N on the review page if not wanted; alias: subsidy repurposing | todo |
 | I26 | Results-based payments | approach | 3 | focused | C | Thin | (search: results-based agri-environment payments) | Suggested by Claude — mark N on the review page if not wanted; alias: payment by results | todo |
+| I27 | Public procurement | approach | 1 | focused | C | Deep | Morgan & Sonnino 2008 (school food); FAO 2021 (public food procurement) | Y — IP1+; includes home-grown school feeding; see I24 Incentives | todo |
 
 ## J. Livelihoods, equity, resilience and natural resources
 
@@ -304,7 +310,7 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | J12 | Ecosystem services | concept | 4 | broad | C | Deep | Costanza et al. 1997; MEA 2005 | Y | todo |
 | J13 | Adaptive co-management | approach | 4 | focused | C | Med | Olsson, Folke & Berkes 2004; Armitage et al. 2009 | Y | todo |
 | J14 | Political ecology | approach | 4 | focused | C | Deep | Blaikie & Brookfield 1987; Robbins 2012 | Y | todo |
-| J15 | Relational values | concept | 2 | focused | C | Thin | Chan et al. 2016; Himes et al. 2024 | Y | todo |
+| J15 | Relational values | concept | 1 | focused | C | Thin | Chan et al. 2016; Himes et al. 2024 | Y — IP1+ | todo |
 | J16 | Adaptive governance | approach | 3 | focused | C | Thin | Folke et al. 2005; Dietz, Ostrom & Stern 2003 | Y — see J13 Adaptive co-management | todo |
 | J17 | Adaptive cycle | framework | 3 | focused | C | Thin | Holling 2001; Gunderson & Holling 2002 (panarchy) | Y — alias: panarchy; see J05 Resilience | todo |
 | J18 | Payment for ecosystem services | approach | 4 | focused | C | Med | Wunder 2005; Engel, Pagiola & Wunder 2008 | Y — alias: PES | todo |
@@ -319,7 +325,7 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | ID | Concept | Type | Wave | Scope | Tier | Zotero | Anchors (verify) | Review | Status |
 |---|---|---|---|---|---|---|---|---|---|
 | K01 | Systematic review | method | 2 | focused | C | Deep | Page et al. 2021 (PRISMA 2020); Cochrane Handbook | Y — Scoping review K02, Meta-analysis K03, Narrative review K04 | todo |
-| K02 | Scoping review | method | 2 | focused | C | Deep | Arksey & O'Malley 2005; Tricco et al. 2018 (PRISMA-ScR) | Y | todo |
+| K02 | Scoping review | method | 1 | focused | C | Deep | Arksey & O'Malley 2005; Tricco et al. 2018 (PRISMA-ScR) | Y — IP1+ | todo |
 | K03 | Meta-analysis | method | 3 | focused | C | Deep | Borenstein et al. 2009 | Y | todo |
 | K04 | Narrative review | method | 3 | focused | C | Med | Baumeister & Leary 1997; Greenhalgh et al. 2018 | Y | todo |
 | K05 | Mixed methods | method | 3 | focused | C | Med | Creswell & Plano Clark | Y | todo |
@@ -335,7 +341,7 @@ Progress: 245 concepts · 4 drafted and upgraded to the page standard (22 Oct 20
 | K15 | Agent-based modelling | method | 4 | focused | C | Deep | Epstein & Axtell 1996 | Y | todo |
 | K16 | Foresight | approach | 3 | focused | C | Med | Voros 2003; Vervoort et al. 2014 | Y — Scenario analysis is K17 | todo |
 | K17 | Scenario analysis | method | 3 | focused | C | Deep | Vervoort et al. 2014; Reilly & Willenbockel 2010 | Y | todo |
-| K18 | Discrete choice experiments | method | 2 | focused | C | Med | Lancaster 1966; Louviere, Hensher & Swait 2000 | Y | todo |
+| K18 | Discrete choice experiments | method | 1 | focused | C | Med | Lancaster 1966; Louviere, Hensher & Swait 2000 | Y — IP1+ | todo |
 | K19 | Monitoring, evaluation and learning | approach | 4 | focused | C | Deep | (search; CGIAR MELIA guidance) | Y — alias: MEL; MELIA is K20 | todo |
 | K20 | Monitoring, evaluation, learning and impact assessment | approach | 3 | focused | C | Deep | (search; CGIAR MELIA) | Y — alias: MELIA | todo |
 | K21 | True cost accounting | method | 3 | focused | C | Med | TEEB AgriFood 2018; Hendriks et al. 2023 | Y — moved from A14 (now an assessment method) | todo |

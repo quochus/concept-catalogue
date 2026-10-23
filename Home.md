@@ -7,7 +7,7 @@ A place to explore relevant concepts and their implications.
 
 ## How it works
 1. **Note freely** in today's note in `1. Daily/`. No structure needed.
-2. **Skim new papers** in `2. New literature/` (or on the Reading Desk on your phone).
+2. **Skim new papers** in the latest page in `2. New literature/New papers/` (or on the Reading Desk on your phone).
 3. **Pick one concept a day** for `3. Concepts/`, ideally one your current work needs. Claude asks for your first take before drafting.
 4. **Discuss** a concept with Claude; discussions worth keeping are saved as pages in `4. Discuss/` and show up on the concept page.
 5. **Review concept updates** in `2. New literature/Concept updates/`. Nothing changes in an entry until you ask.
@@ -15,7 +15,7 @@ A place to explore relevant concepts and their implications.
 
 ## Folders
 - `1. Daily/` daily notes: raw notes, ideas, things to look up
-- `2. New literature/` papers from the daily literature check, plus suggested concept updates ([[New literature]])
+- `2. New literature/` one table page per sync of the papers you kept, plus suggested concept updates ([[New literature]])
 - `3. Concepts/` one page per concept, and the [[0. Dictionary|Dictionary]] (A–Z)
 - `4. Discuss/` one page per discussion, linked to its concepts ([[Discuss]])
 - `Templates/`, `Attachments/`, `Claude setup/` support folders

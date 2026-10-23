@@ -1,33 +1,18 @@
 # New literature
 
-Papers found by the daily literature check (every morning around 6:00 Hanoi time), with Claude's key takeaways. Read them on the phone in the Reading Desk page: https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU
+The daily literature check (about 6:00 Hanoi time) puts new papers on the Reading Desk page: https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU
 
-- One note per paper in `Papers/` while it is to read or reading. Change `status` (to read, reading, read, not relevant) here or on the Reading Desk page; the next sync copies it across.
-- Papers marked read or not relevant are moved to `Archive/YYYY-MM/` (month found). Nothing is deleted.
-- Each note carries Claude's `relevance` (high/medium/low), `relates_to` (your projects) and your own `my_relevance`.
-- Papers are also added to Zotero, in the collection **_Daily new articles**.
-- A paper is used in a concept entry only when you ask; its evidence then goes into that concept page's Key sources and Evidence lists.
+You decide on the page which papers to keep (Must read, Later, Done). Each time you tap **Sync to laptop**, the papers you kept since the last sync are added to **one new page** in `New papers/`, named `New papers YYYY-MM-DD` (the sync date), as a table: full reference (APA 7), one-line summary, relevant concepts (links to existing concept pages) and DOI/link, sorted A–Z by first author. There is no note per paper.
 
-## To read
+- Papers marked Not relevant, or left New, are never written here.
+- Status, relevance and key takeaways stay on the Reading Desk page. Kept papers also go to Zotero (collection **_Daily new articles**).
+- A paper is used in a concept entry only when you ask. Its evidence then goes into that concept page's Key sources and Evidence lists.
+- Suggested changes to concept pages go to `Concept updates/`.
+- `_old paper notes/` holds the per-paper notes from before 24 Oct 2026. Nothing in it is used any more; delete it when you are happy.
+
+## Sync pages
 ```dataview
-TABLE WITHOUT ID file.link AS Paper, venue AS Venue, found_on AS Found, top_pick AS "Top pick"
-FROM "2. New literature/Papers"
-WHERE status = "to read" OR status = "reading"
-SORT found_on DESC, top_pick DESC
-```
-
-## Read
-```dataview
-TABLE WITHOUT ID file.link AS Paper, venue AS Venue, found_on AS Found
-FROM "2. New literature/Archive"
-WHERE status = "read"
-SORT found_on DESC
-```
-
-## Relevant to my work
-```dataview
-TABLE WITHOUT ID file.link AS Paper, relevance AS Relevance, relates_to AS "Relates to", status AS Status
-FROM "2. New literature"
-WHERE type = "paper" AND (my_relevance = "yes" OR (relevance = "high" AND my_relevance != "no"))
-SORT found_on DESC
+TABLE WITHOUT ID file.link AS Page, papers AS Papers
+FROM "2. New literature/New papers"
+SORT synced DESC
 ```

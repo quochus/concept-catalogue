@@ -29,7 +29,8 @@ CLAUDE.md                                pointer to this skill
 1. Daily/YYYY-MM-DD.md                   daily notes: raw notes, ideas, first takes
 2. New literature/                       daily literature check, synced with the Reading Desk
                                          (https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU); don't reorganise by hand
-    Papers/  Archive/YYYY-MM/            paper notes
+    New papers/New papers YYYY-MM-DD.md  one page per sync: a table of the papers Quoc kept (full APA 7 reference, one-line summary, relevant concepts as [[links]] to existing pages, DOI/link; A–Z by first author)
+    _old paper notes/                    per-paper notes from before 2026-10-24; unused, safe to delete
     Concept updates/YYYY-MM-DD.md        suggested edits to concept pages
 3. Concepts/0. Dictionary.md             A–Z list of linked concept names (Dataview LIST; updates itself; never edit; see §3)
 3. Concepts/0. Backlog.md                the plan (waves, pace, week-by-week order) and the concept list: ID, type, wave, scope, tier, review, status
@@ -40,7 +41,7 @@ Attachments/                             images and files
 Claude setup/                            README, setup notes, scripts/zcat.py (Zotero helper)
 ```
 
-Evidence lives in each concept page (Key sources + Evidence). There is no Sources folder; Zotero is the only library. Do not create Zotero collections or tags for the catalogue. A paper in `2. New literature/` is used in a concept only when Quoc asks.
+Evidence lives in each concept page (Key sources + Evidence). There is no Sources folder; Zotero is the only library. Do not create Zotero collections or tags for the catalogue. A paper listed in `2. New literature/New papers/` is used in a concept only when Quoc asks. Never create one note per paper: new papers go only into the table of the sync page (columns: Full reference (APA 7), Summary of one line, Relevant concepts, DOI / link; frontmatter `type: new-papers`, `synced`, `papers`). Status, relevance and takeaways stay on the Reading Desk page.
 
 ## 3. Conventions
 
@@ -244,7 +245,7 @@ When asked to "file my notes": read `1. Daily/` and `4. Discuss/`; move concept 
 
 ## 8. Concept updates
 
-Suggested changes to existing pages go to `2. New literature/Concept updates/YYYY-MM-DD.md`, drawn only from papers already in New literature: grouped by concept, each with the paper, what it adds, and the proposed edit (section + exact text). **Never rewrite Definitions, Features, Implications or My first take automatically.** Change a page only when Quoc asks after reviewing, then update `last_reviewed`.
+Suggested changes to existing pages go to `2. New literature/Concept updates/YYYY-MM-DD.md`, drawn only from papers already listed in New papers (read the Reading Desk page for their takeaways): grouped by concept, each with the paper, what it adds, and the proposed edit (section + exact text). **Never rewrite Definitions, Features, Implications or My first take automatically.** Change a page only when Quoc asks after reviewing, then update `last_reviewed`.
 
 ## 9. Planning and the backlog review
 

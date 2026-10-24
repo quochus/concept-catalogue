@@ -29,7 +29,7 @@ CLAUDE.md                                pointer to this skill
 1. Daily/YYYY-MM-DD.md                   daily notes: raw notes, ideas, first takes
 2. New literature/                       daily literature check, synced with the Reading Desk
                                          (https://claude.ai/artifact/TzXTkjTBsdnVk45P7hzpaU); don't reorganise by hand
-    New papers/New papers YYYY-MM-DD.md  one page per sync: a table of the papers Quoc kept (full APA 7 reference, one-line summary, relevant concepts as [[links]] to existing pages, DOI/link; A–Z by first author)
+    New papers/New papers YYYY-MM-DD.md  one page per sync: a table of the papers Quoc kept (APA 7 reference with at most 3 authors then et al. and no URL, one-line summary, relevant concepts as [[links]] to existing pages, DOI/link; A–Z by first author)
     _old paper notes/                    per-paper notes from before 2026-10-24; unused, safe to delete
     Concept updates/YYYY-MM-DD.md        suggested edits to concept pages
 3. Concepts/0. Dictionary.md             A–Z list of linked concept names (Dataview LIST; updates itself; never edit; see §3)

@@ -69,15 +69,15 @@ Quoc's Obsidian concept catalogue: a dictionary of about 250 concepts, approache
 - **Key sources:** a full APA 7 list. Each entry ends with a role tag (seminal, review, recent, Viet Nam/ASEAN, case, critique…) and a `[Zotero](zotero://select/library/items/PARENTKEY)` link.
 - **Evidence:** a table with columns `ID | Claim | Section | Source | Quote | Locator | Open`. The Open link is `zotero://open-pdf/library/items/ATTKEY?page=N`, where N is always the PDF page index. Locator gives the printed page (`p. 974`), or `PDF p. N` for article-number journals and reports. Every quote that appears in the body must have a row.
 
-**Target sizes:**
+**Target sizes (set by Quoc, 25 Oct 2026):**
 
-| Tier | Sources | Words |
-|---|---|---|
-| Full, broad | 12–20 | 1,500–2,500 |
-| Full, focused | 8–12 | 1,000–1,600 |
-| Compact | 5–8 | 600–900 |
+| Tier | Sources |
+|---|---|
+| Full, broad | 12–20 |
+| Full, focused | 8–12 |
+| Compact | 5–8 |
 
-If a page falls short, it says so in a gap note.
+Words: every page has **at least 1,000 words**; the ideal is **1,200–2,000**, and longer is fine. There is no upper limit, so never cut sourced material to shorten a page. If a page falls short on sources or words, it says so in a gap note.
 
 ## 5. Concept IDs and clusters
 

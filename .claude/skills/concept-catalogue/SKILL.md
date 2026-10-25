@@ -62,14 +62,8 @@ Evidence lives in each concept page (Key sources + Evidence). There is no Source
 - **type**: *concept* = an idea or phenomenon; *framework* = a structured scheme of components or levels; *method* = a procedure for collecting or analysing data; *approach* = a way of acting or intervening that combines principles and practice.
 - **fields** (controlled list): food systems · sustainability transitions · innovation and scaling · agroecology · sustainable agriculture · value chains and markets · consumption and nutrition · food security and safety · governance and policy · institutions · natural resource management · research methods.
 - **related**: link only to pages that exist or to names in `0. Backlog.md`. If a needed concept is in neither, add it under "Proposed additions" in the backlog and tell Quoc.
-- **scope**: *broad* = an umbrella concept that covers many practices, actors or cases (e.g. Agroecology, Food system, Value chain, Food security, Institutions); *focused* = a specific principle, mechanism, tool or relation (e.g. Connectivity, Participatory guarantee systems, Willingness to pay). The backlog's Scope column sets it; scope decides the size and the shape of Implications.
-- **Size** (body sections Definitions → Comparison, excluding Key sources and Evidence):
-
-  | | Sources | Words |
-  |---|---|---|
-  | full, broad | 12–20 | 1,500–2,500 |
-  | full, focused | 8–12 | 1,000–1,600 |
-  | compact | 5–8 | 600–900 |
+- **scope**: *broad* = an umbrella concept that covers many practices, actors or cases (e.g. Agroecology, Food system, Value chain, Food security, Institutions); *focused* = a specific principle, mechanism, tool or relation (e.g. Connectivity, Participatory guarantee systems, Willingness to pay). The backlog's Scope column sets it; scope decides the source count and the shape of Implications.
+- **Size** (set by Quoc, 25 Oct 2026). Sources: full, broad 12–20; full, focused 8–12; compact 5–8. Words (body sections Definitions → Comparison, excluding Key sources and Evidence): every page has **at least 1,000**, ideally **1,200–2,000**, and longer is fine. There is no upper limit: never cut sourced, verified material just to shorten a page.
 - **In-text citations** are APA 7: `(Wezel et al., 2009, p. 503)`, `(Holt-Giménez & Altieri, 2013, p. 90)`, `Gliessman (2016, p. 188) describes…`. Use `PDF p. 6` when the document has no printed page numbers, and `Fig. 2, p. 9` / `Table 1, p. 7` for figures and tables.
 - **Language**: plain, short sentences, British spelling except in quotes and titles, "Viet Nam" in prose. No headings inside sections; bold lead-ins are fine.
 - **Claude's own synthesis** (a grouping, typology or proxy not taken from a source) is allowed but must be labelled in the text: *(Claude's grouping, not from a source)*.
@@ -218,7 +212,7 @@ Finally set `status: draft`, keep `created` (the first-take date), set `last_rev
 - [ ] Evidence is a table; every row has claim, section, source, quote (`zcat.py quote` → OK), locator and link.
 - [ ] `zcat.py check "3. Concepts/<Name>.md"` reports no MISSING, WRONG or WARN lines (parent keys in Key sources, attachment keys in Evidence, pages in range). `qa.py "3. Concepts/<Name>.md"` checks quotes, the 15-word limit and body quotes against Evidence.
 - [ ] Claude's own synthesis is labelled.
-- [ ] Word count within the size range for scope and tier (body sections only).
+- [ ] At least 1,000 words in the body sections (ideally 1,200–2,000; more is fine), and the source count fits the tier.
 - [ ] My first take and In my words untouched.
 
 Links check (on the laptop): `grep -o '\[\[[^]|]*' "3. Concepts/<Name>.md" | sort -u`, then confirm each is a page or a backlog name.

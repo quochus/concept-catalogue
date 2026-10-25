@@ -17,6 +17,9 @@ last_reviewed: 2026-10-22
 (skipped)
 
 ## Definitions
+> [!note] Merged (25 Oct 2026)
+> This entry is folded into [[Regenerative agriculture]], as planned in the Backlog (B19 → B10). Its definition, learning mechanism, Laos case and sources were moved there. This page is kept unchanged below for reference; Quoc can delete it when he has reviewed the merge.
+
 Conservation agriculture grew out of efforts to stop soil erosion under plough-based farming, and it is defined by its practices. It is "usually defined by three main principles": "minimal disturbance of the soil (reduced tillage or no-tillage)", soil cover by crop residues or cover crops, and appropriate crop rotation (Vankeerberghen & Stassart, 2016, p. 392). FAO adopted this three-principle definition, which made it an institutional programme as well as a farming practice.
 
 Its meaning then widened from a technical package to a transition. Studies of farmers moving to it show that the change is cognitive as well as technical: "learning and experiencing processes can lead to a transformation in soil" management perceptions (Vankeerberghen & Stassart, 2016, p. 392), and conservation agriculture grows as a niche, "progressively detaching itself from the conventional agricultural regime" (p. 392).

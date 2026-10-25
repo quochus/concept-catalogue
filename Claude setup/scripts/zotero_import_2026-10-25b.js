@@ -1,14 +1,15 @@
 // Concept catalogue → Zotero import (built by Claude, 25 Oct 2026, second batch: Credence attributes, Intrinsic & Instrumental value, Food hubs)
 // HOW TO RUN: Zotero > Tools > Developer > Run JavaScript.
 //   Tick "Run as async function", paste this whole file, press Run.
-//   First run with DRY_RUN = true (nothing changes; it lists what it would do).
-//   Then set DRY_RUN = false and run again. Takes ~2 minutes (one DOI lookup at a time).
+//   This file is set to LIVE (DRY_RUN = false): it changes your library when you press Run.
+//   Takes ~2 minutes (one DOI lookup at a time).
 // What it does (additive only; it never moves, edits or deletes existing items):
 //   1. Creates missing sub-folders under Main collection > 3. Food systems.
 //   2. Imports each DOI (skips DOIs already in your library) into its folder(s), with open-access PDFs when Zotero finds them.
 //   3. Adds already-existing items (by item key) to the same folders.
 //   4. Creates hand-entered items for works without DOIs.
 //   5. Tries 'Find Available PDF' for every item it touched that still has no PDF.
+//   6. Checks that every item it touched is in at least one folder, and warns if not.
 //   Every item touched gets the tag below, so you can review or undo it in one click.
 
 const DRY_RUN = false;   // LIVE run (set to true to only list what it would do)
@@ -502,6 +503,11 @@ if (!DRY_RUN && SAVE_PDFS && findAvailable) {
     await Zotero.Promise.delay(800);
   }
 }
+
+// 6. Check: every touched item must sit in at least one folder
+const unfiled = touched.filter(i => i.isTopLevelItem() && !i.deleted && i.getCollections().length === 0);
+if (!DRY_RUN && unfiled.length) say(`WARNING, not in any folder (${unfiled.length}):\n  ` + unfiled.map(i => i.getField("title").slice(0, 70)).join("\n  "));
+else if (!DRY_RUN) say("Check passed: every item touched is in at least one folder.");
 
 say(`\n${DRY_RUN ? "DRY RUN — nothing changed. " : ""}Imported ${nImp}, already in library ${nSkip}, failed ${nFail}, existing items filed ${nFiled}, items created ${nMan}, PDFs added ${nPDF}.`);
 if (noPDF.length) say(`Still without PDF (${noPDF.length}):\n  ` + noPDF.join("\n  "));

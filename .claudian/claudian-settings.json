@@ -48,8 +48,8 @@
       "selectedModels": [
         {
           "value": "opus",
-          "label": "Opus",
-          "description": "Opus 5.5 · Best for everyday, complex tasks",
+          "label": "Opus 5.5",
+          "description": "For complex work and everyday tasks",
           "resolvedModel": "claude-opus-5-5",
           "reasoningMetadataResolved": true,
           "supportedEffortLevels": [
@@ -62,8 +62,8 @@
         },
         {
           "value": "sonnet",
-          "label": "Sonnet",
-          "description": "Sonnet 5.5 · Efficient for routine tasks",
+          "label": "Sonnet 5.5",
+          "description": "Most efficient for simpler tasks",
           "resolvedModel": "claude-sonnet-5-5",
           "reasoningMetadataResolved": true,
           "supportedEffortLevels": [
@@ -76,8 +76,8 @@
         },
         {
           "value": "haiku",
-          "label": "Haiku",
-          "description": "Haiku 5.5 · Fastest for quick answers",
+          "label": "Haiku 5.5",
+          "description": "Fastest for quick answers",
           "resolvedModel": "claude-haiku-5-5",
           "reasoningMetadataResolved": true,
           "supportedEffortLevels": [
@@ -185,6 +185,7 @@
   "skillsSynced": false,
   "sessionManagerOrganization": "list",
   "sessionManagerSort": "last-updated",
+  "projectSort": "last-updated",
   "sessionAutoArchiveAfter": "off",
   "pinnedLinkedContentPaths": [],
   "hiddenCommands": []

@@ -2,13 +2,23 @@
 type: approach
 short: "The ecology of food systems: a science, a set of practices and a social movement that redesign agriculture and food systems around ecological and social principles."
 aliases: []
-fields: [agroecology, sustainable agriculture, food systems]
-related: ["[[Connectivity]]", "[[Scaling agroecology]]", "[[Values of sustainable agri-food products]]", "[[Food sovereignty]]", "[[Organic agriculture]]", "[[Regenerative agriculture]]"]
+fields:
+  - agroecology
+  - sustainable agriculture
+  - food systems
+related:
+  - "[[Connectivity]]"
+  - "[[Scaling agroecology]]"
+  - "[[Values of sustainable agri-food products]]"
+  - "[[Food sovereignty]]"
+  - "[[Organic agriculture]]"
+  - "[[Regenerative agriculture]]"
 scope: broad
 tier: full
 status: draft
 created: 2026-10-21
 last_reviewed: 2026-10-22
+tags:
 ---
 
 ## My first take

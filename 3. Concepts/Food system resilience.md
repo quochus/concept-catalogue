@@ -62,7 +62,6 @@ Food system resilience should be kept apart from neighbouring ideas. [[Resilienc
 
 ## Own works
 - Tran, H., Nguyen, Q., & Kervyn, M. (2017). Household social vulnerability to natural hazards in the coastal Tran Van Thoi District, Ca Mau Province, Mekong Delta, Vietnam. *Journal of Coastal Conservation, 21*(4), 489–503. https://doi.org/10.1007/s11852-017-0522-8 — [Zotero](zotero://select/library/items/3YH3YAZ8)
-- Nguyen, Q. (2026). From vulnerability to resilience: A systems-informed documentary synthesis of sustainable dragon fruit farming in Vietnam. *Research in Globalization*. — [Zotero](zotero://select/library/items/DRITFJRZ) *(Zotero lists the author as "Q.B. Nguyen": please confirm this is yours.)*
 - CIAT work in the ciat-work vault: not checked (that vault was not connected in this session).
 
 ## Comparison with my first take

@@ -18,7 +18,7 @@ tier: full
 status: draft
 created: 2026-10-21
 last_reviewed: 2026-10-22
-tags: [approach]
+tags: [approach, entry]
 ---
 
 ## My first take

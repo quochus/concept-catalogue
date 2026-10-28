@@ -9,6 +9,7 @@ tier: compact
 status: draft
 created: 2026-10-22
 last_reviewed: 2026-10-22
+tags: [approach, concept]
 ---
 
 ## My first take

@@ -1,5 +1,5 @@
 ---
-type: method
+type: concept
 short: "The maximum amount a buyer would pay for a product or attribute, usually estimated as a premium over a conventional product with contingent valuation, choice experiments or experimental auctions."
 aliases: [WTP, price premium, stated willingness to pay]
 fields: [research methods, consumption and nutrition, value chains and markets]
@@ -9,6 +9,7 @@ tier: full
 status: draft
 created: 2026-10-25
 last_reviewed: 2026-10-25
+tags: [concept]
 ---
 
 ## My first take

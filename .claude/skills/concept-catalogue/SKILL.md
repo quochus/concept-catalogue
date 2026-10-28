@@ -48,7 +48,7 @@ Evidence lives in each concept page (Key sources + Evidence). There is no Source
 - **File name = concept name**, sentence case, singular unless the plural is the term ("Food systems approach", "Institutions"), no abbreviation in the name. Put abbreviations and synonyms in `aliases` (e.g. `aliases: [MLP]`).
 - **Frontmatter** (every concept page):
   ```yaml
-  type: concept | framework | method | approach
+  type: concept | framework | approach
   short: "<one sentence, ≤ 30 words, no citations>"
   aliases: []
   fields: [<1–3 from the list below>]
@@ -59,7 +59,7 @@ Evidence lives in each concept page (Key sources + Evidence). There is no Source
   created: YYYY-MM-DD
   last_reviewed: YYYY-MM-DD
   ```
-- **type**: *concept* = an idea or phenomenon; *framework* = a structured scheme of components or levels; *method* = a procedure for collecting or analysing data; *approach* = a way of acting or intervening that combines principles and practice.
+- **type**: *concept* = an idea or phenomenon; *framework* = a structured scheme of components or levels; *approach* = a way of acting, intervening or doing research that combines principles and practice, including research and assessment methods (Quoc merged *method* into *approach*, 28 Oct 2026; don't use `method`).
 - **fields** (controlled list): food systems · sustainability transitions · innovation and scaling · agroecology · sustainable agriculture · value chains and markets · consumption and nutrition · food security and safety · governance and policy · institutions · natural resource management · research methods.
 - **related**: link only to pages that exist or to names in `0. Backlog.md`. If a needed concept is in neither, add it under "Proposed additions" in the backlog and tell Quoc.
 - **scope**: *broad* = an umbrella concept that covers many practices, actors or cases (e.g. Agroecology, Food system, Value chain, Food security, Institutions); *focused* = a specific principle, mechanism, tool or relation (e.g. Connectivity, Participatory guarantee systems, Willingness to pay). The backlog's Scope column sets it; scope decides the source count and the shape of Implications.
@@ -160,7 +160,7 @@ End the section with one sentence in bold: **Working definition used here:** …
 **Features: one paragraph per element, in this fixed order; each paragraph ends by setting up the next.**
 - Concepts and approaches: **Components** (what it consists of) → **Mechanisms** (how and why it produces effects) → **Conditions** (what enables or constrains it; where it works and where it doesn't) → **Measurement** (indicators, tools, how studies operationalise it) → **Debates** (what is contested, by whom, and on what grounds).
 - Frameworks: **Structure** → **Logic** (how the parts relate) → **Assumptions** → **Operationalisation** → **Critiques**.
-- Methods: **Components** → **Procedure** (main steps) → **Assumptions** → **Quality criteria** → **Critiques and limits**.
+- Approaches that are research or assessment methods (mostly cluster K): **Components** → **Procedure** (main steps) → **Assumptions** → **Quality criteria** → **Critiques and limits**.
 Use bold lead-ins for these labels only. Debates present both sides with sources, then say what remains unresolved.
 
 **Implications: shape and depth follow the concept's scope.**
@@ -172,7 +172,7 @@ Use bold lead-ins for these labels only. Debates present both sides with sources
 - *Broad concept with a compact tier*: the same three parts, with 3–4 cases in the table.
 - *Focused concept or approach* (e.g. Connectivity): 2–4 cases that show the mechanism at work (bullets with bold lead-ins, or the case table), then one paragraph on what they show together. Add a review's findings if one exists.
 - *Framework*: an applications table, `| Study | Context | How the framework was used | Insight |` (3–5 rows), then a paragraph on how it has been adapted and the limits seen in use.
-- *Method*: an applications table (3–4 rows, same columns), then practical guidance: when to use it, data needed, common pitfalls.
+- *Approach that is a research or assessment method*: an applications table (3–4 rows, same columns), then practical guidance: when to use it, data needed, common pitfalls.
 Viet Nam/ASEAN evidence comes first where it exists; say so when none was found.
 
 **Own works.** Quoc's publications, manuscripts, reports and projects that use the concept. Find them in Zotero (author Nguyen, Q.) and, for CIAT work, link with obsidian:// URIs. Titles and links only; no CIAT content. "None yet" if none.
@@ -201,7 +201,7 @@ Viet Nam/ASEAN evidence comes first where it exists; say so when none was found.
 Finally set `status: draft`, keep `created` (the first-take date), set `last_reviewed` to today, and fill `short`, `related`, `scope` and `tier`.
 
 ### Step 5. QA checklist (run before finishing; fix, don't report)
-- [ ] Frontmatter complete; `type`, `fields`, `scope`, `tier`, `status` use allowed values; `short` ≤ 30 words.
+- [ ] Frontmatter complete; `type` (concept, framework or approach), `fields`, `scope`, `tier`, `status` use allowed values; `short` ≤ 30 words.
 - [ ] Every `[[link]]` resolves to an existing page or a backlog name.
 - [ ] The page will show in the Dictionary under the right letter: it is in the root of `3. Concepts/`, has `type`, and its file name starts with a letter.
 - [ ] Source mix from Step 2 is met (or the gap is stated in the page); broad concepts have a review or meta-analysis.

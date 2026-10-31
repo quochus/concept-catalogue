@@ -72,7 +72,7 @@ Together, the cases show regenerative agriculture spreading where it pays, and b
 - IP1+ 2.5 Consumer incentives in Cambodia (scoping review of added values for regenerative agriculture products, 2026): [open](obsidian://open?vault=ciat-work&file=2.%20Work%2FIP1%2B%202.5%20Consumer%20incentives%20in%20Cambodia)
 
 ## Comparison with my first take
-*No first take recorded (skipped 22 Oct 2026). Add yours to *"My first take"* and ask Claude to fill in this comparison.*
+*No first take recorded (skipped 22 Oct 2026). Add yours to "My first take" and ask Claude to fill in this comparison.*
 
 ## In my words
 *One sentence, written by me.*

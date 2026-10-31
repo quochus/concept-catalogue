@@ -72,7 +72,7 @@ Across the cases, certification works best for larger, organised and export-link
 - ISG Plenary 2026 presentation on market incentives for agroecological products: [open](obsidian://open?vault=ciat-work&file=2.%20Work%2FISG%20Plenary%202026%20presentation%20(market%20incentives%20for%20agroecological%20products))
 
 ## Comparison with my first take
-*No first take recorded yet. Add yours to *"My first take"* and ask Claude to fill in this comparison.*
+*No first take recorded yet. Add yours to "My first take" and ask Claude to fill in this comparison.*
 
 ## In my words
 *One sentence, written by me.*

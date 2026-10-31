@@ -11,21 +11,28 @@
       "query": "tag:#approach  ",
       "color": {
         "a": 1,
-        "rgb": 14048348
+        "rgb": 1188066
       }
     },
     {
       "query": "tag:#concept  ",
       "color": {
         "a": 1,
-        "rgb": 14069084
+        "rgb": 13292362
       }
     },
     {
       "query": "tag:#topic  ",
       "color": {
         "a": 1,
-        "rgb": 11392604
+        "rgb": 15337186
+      }
+    },
+    {
+      "query": "tag:#method",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
       }
     }
   ],
@@ -39,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7132754626224438,
+  "scale": 0.3628873693012141,
   "close": false
 }

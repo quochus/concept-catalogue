@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [entry, concept]
+tags:
 short: ""
 aliases: []
 fields: []
@@ -8,8 +8,10 @@ related: []
 scope: focused
 tier: full
 status: first take
-created: {{date:YYYY-MM-DD}}
-last_reviewed: {{date:YYYY-MM-DD}}
+created:
+  "{ date:YYYY-MM-DD }":
+last_reviewed:
+  "{ date:YYYY-MM-DD }":
 ---
 
 ## My first take

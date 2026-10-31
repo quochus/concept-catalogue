@@ -77,7 +77,7 @@ The cases show that VBSCs can stabilise prices and keep product identity for mid
 - Value-based connectivity review (IP1+, 2025–26): [open](obsidian://open?vault=ciat-work&file=2.%20Work%2FValue-based%20connectivity%20review)
 
 ## Comparison with my first take
-*No first take recorded yet. Add yours to *"My first take"* and ask Claude to fill in this comparison.*
+*No first take recorded yet. Add yours to "My first take" and ask Claude to fill in this comparison.*
 
 ## In my words
 *One sentence, written by me.*

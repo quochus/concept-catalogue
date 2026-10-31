@@ -1,6 +1,5 @@
 ---
 type: concept
-tags: [entry, concept]
 short: All the elements, actors and activities involved in producing, processing, distributing, preparing and consuming food, together with their drivers, outcomes and feedbacks.
 aliases:
   - food systems
@@ -30,6 +29,9 @@ tier: full
 status: draft
 created: 2026-10-31
 last_reviewed: 2026-10-31
+tags:
+  - entry
+  - concept
 ---
 
 ## My first take

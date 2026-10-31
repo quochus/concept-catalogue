@@ -69,7 +69,7 @@ Together, the cases show that inclusion depends on organised producers, buyer co
 - IP1+ 2.4 Intermediaries, Laos and Cambodia (report with recommendations for scaling): [open](obsidian://open?vault=ciat-work&file=2.%20Work%2FIP1%2B%202.4%20Intermediaries)
 
 ## Comparison with my first take
-*No first take recorded (skipped 22 Oct 2026). Add yours to *"My first take"* and ask Claude to fill in this comparison.*
+*No first take recorded (skipped 22 Oct 2026). Add yours to "My first take" and ask Claude to fill in this comparison.*
 
 ## In my words
 *One sentence, written by me.*

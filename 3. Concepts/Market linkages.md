@@ -69,7 +69,7 @@ Together the cases show that in Viet Nam, Cambodia and Kenya the working linkage
 None yet.
 
 ## Comparison with my first take
-*No first take recorded (skipped 22 Oct 2026). Add yours to *"My first take"* and ask Claude to fill in this comparison.*
+*No first take recorded (skipped 22 Oct 2026). Add yours to "My first take" and ask Claude to fill in this comparison.*
 
 ## In my words
 *One sentence, written by me.*

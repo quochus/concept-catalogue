@@ -1,5 +1,6 @@
 ---
 type: concept
+tags: [entry, concept]
 short: ""
 aliases: []
 fields: []
@@ -20,10 +21,10 @@ last_reviewed: {{date:YYYY-MM-DD}}
 %% Narrative in 3–5 linked paragraphs, no bullets: origin and the problem it answered → how the meaning evolved and why → the current core definition and components → where definitions diverge and why → boundaries with neighbouring concepts. End with the working definition this page uses. %%
 
 ## Features
-%% One paragraph each, in this order, each leading into the next: **Components** → **Mechanisms** → **Conditions** → **Measurement** → **Debates**. Research or assessment methods (type approach): Components → Procedure → Assumptions → Quality criteria → Critiques. %%
+%% A bold label on its own line, then cited bullet points (3–6), in this order: **Components** → **Mechanisms** → **Conditions** → **Measurement** → **Debates** (end Debates with what remains unresolved). Frameworks: Structure → Logic → Assumptions → Operationalisation → Critiques. Methods (type method): Components → Procedure → Assumptions → Quality criteria → Critiques. Quotes in italics: *"…"* (Author, year, p. N). Type and tag: concept, framework, approach, method or topic. %%
 
 ## Implications
-%% Scaled to the concept. Broad: evidence overview from reviews → case table (5–8 distinct cases) → cross-case lessons. Focused: 2–4 cases showing the mechanism → what they show. Framework, or approach that is a research method: applications table → lessons for use. %%
+%% Scaled to the concept. Broad: evidence overview from reviews → case table (5–8 distinct cases) → cross-case lessons. Focused: 2–4 cases showing the mechanism → what they show. Framework or method: applications table → lessons for use. %%
 
 ## Own works
 %% Quoc's publications, reports and projects; CIAT work as obsidian:// links. "None yet" if none. %%

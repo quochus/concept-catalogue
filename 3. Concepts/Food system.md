@@ -1,9 +1,29 @@
 ---
 type: concept
-short: "All the elements, actors and activities involved in producing, processing, distributing, preparing and consuming food, together with their drivers, outcomes and feedbacks."
-aliases: [food systems, agri-food system, agrifood system, food and nutrition system]
-fields: [food systems, consumption and nutrition, food security and safety]
-related: ["[[Food systems approach]]", "[[Food system activities]]", "[[Food system drivers]]", "[[Food system outcomes]]", "[[Food system typology]]", "[[Food system transitions]]"]
+short: All the elements, actors and activities involved in producing, processing, distributing, preparing and consuming food, together with their drivers, outcomes and feedbacks.
+aliases:
+  - food systems
+  - agri-food system
+  - agrifood system
+  - food and nutrition system
+fields:
+  - food systems
+  - consumption and nutrition
+  - food security and safety
+related:
+  - "[[Food systems approach]]"
+  - "[[Food system activities]]"
+  - "[[Food system drivers]]"
+  - "[[Food system outcomes]]"
+  - "[[Food system typology]]"
+  - "[[Food system transitions]]"
+  - "[[Food security]]"
+  - "[[Food environment]]"
+  - f
+  - "[[Food systems transformation]]"
+  - "[[Food sovereignty]]"
+  - "[[Alternative food networks]]"
+  - "[[Market systems]]"
 scope: broad
 tier: full
 status: draft
@@ -44,7 +64,7 @@ The concept also needs boundaries with its neighbours. A food system is not the 
 
 ## Implications
 
-**Evidence overview.** Reviews show that the food system concept is now widely used, but applied unevenly. Alarcon et al. (2021) reviewed food systems theory and its application in low- and middle-income countries. They found gaps in food system mapping and governance, and a growing use of the label "informal" food system, "a term used inconsistently and one that requires revision" (PDF p. 1). Gaitán-Cremaschi et al. (2019) reviewed how food system diversity is characterised and found that, while research on food system transitions abounds, there was no operational method to map several co-existing food systems in one place; they proposed one. Liddy et al. (2023) reviewed food mapping in three city regions and found that informal flows and fast urban growth limit what mapping can show. No systematic review or meta-analysis of food system cases as such was found; the reviews above are narrative or methodological. Across these reviews the evidence is strongest for describing structure (who supplies what, through which channels) and weakest for linking structure to nutrition and environmental outcomes.
+**Evidence overview.** Reviews show that the food system concept is now widely used, but applied unevenly. Alarcon et al. (2021) reviewed food systems theory and its application in low- and middle-income countries. They found gaps in food system mapping and governance, and a growing use of the label "informal" food system, "a term used inconsistently and one that requires revision" (PDF p. 1). Gaitán-Cremaschi et al. (2019) reviewed how food system diversity is characterised and found that, while research on food system transitions abounds, there was no operational method to map several co-existing food systems in one place; they proposed one. Liddy et al. (2023) reviewed food mapping in three city regions and found that informal flows and fast urban growth limit what mapping can show. The broadest systematic evidence comes from an evidence gap map of food system interventions in low- and middle-income countries. Moore et al. (2021, p. iii) report that "a total of 1,838 impact evaluations and 178 systematic reviews were identified", most on nutrition-specific measures such as "the provision of supplements, fortification, classes in the consumer behaviour domain". "Roughly three quarters of impact evaluations implemented randomised designs" (p. iii), which suits single interventions better than system-wide change. No systematic review of food system cases as such was found. Across these reviews the evidence is strongest for describing structure (who supplies what, through which channels) and weakest for linking structure to nutrition and environmental outcomes.
 
 **Cases.** The cases below are chosen to span a typology of food system analyses by scale and type *(Claude's grouping, not from a source)*: national or regional profiles, city-region systems, co-existing system types within a country, commodity systems, telecoupled systems that reach across borders, and a contested modernisation case.
 
@@ -97,6 +117,7 @@ LIST FROM [[]] AND "4. Discuss" SORT file.name DESC
 - Liddy, H., Mowlds, S., McKeown, P. C., Lundy, M., & Spillane, C. (2023). Food mapping approaches for understanding food system transformations in rapid-growth city regions in the Global South. *Frontiers in Sustainable Food Systems, 7*, 1238124. https://doi.org/10.3389/fsufs.2023.1238124 — recent · review · Viet Nam/ASEAN · case — [Zotero](zotero://select/library/items/9DNIJA95)
 - Marshall, G. R. (2015). A social-ecological systems framework for food systems research: Accommodating transformation systems and their products. *International Journal of the Commons, 9*(2), 881–908. https://doi.org/10.18352/ijc.587 — Viet Nam/ASEAN · case — [Zotero](zotero://select/library/items/PCX2ER4H)
 - McMichael, P. (2009). A food regime analysis of the 'world food crisis'. *Agriculture and Human Values, 26*(4), 281–295. https://doi.org/10.1007/s10460-009-9218-5 — distinct perspective — [Zotero](zotero://select/library/items/DPBWGPD7)
+- Moore, N., Lane, C., Storhaug, I., Franich, A., Rolker, H., Furgeson, J., Sparling, T., & Snilstveit, B. (2021). *The effects of food systems interventions on food security and nutrition outcomes in low- and middle-income countries* (3ie Evidence Gap Map Report 16). International Initiative for Impact Evaluation (3ie). https://doi.org/10.23846/EGM016 — review — [Zotero](zotero://select/library/items/G5SVQFND)
 - Posthumus, H., de Steenhuijsen-Piters, B., Dengerink, J., & Vellema, S. (2018). *Food systems: From concept to practice and vice versa*. Wageningen University & Research; KIT Royal Tropical Institute. — distinct perspective — [Zotero](zotero://select/library/items/FB4JWGLQ)
 - Raneri, J. E., Wertheim-Heck, S., Phuong, N., Huong, L. T., Mai, T. T., Duong, T. T., Hung, N., Nguyen, T., Huynh, T., Nodari, G. R., Spellman, O., Talsma, E. F., Stoian, D., Duong, M., Tran, L. N., & Béné, C. (2019). *Determining key research areas for healthier diets and sustainable food systems in Viet Nam* (IFPRI Discussion Paper 01872). IFPRI. https://doi.org/10.2499/p15738coll2.133433 — Viet Nam/ASEAN — [Zotero](zotero://select/library/items/9MGWBZI3)
 - Sobal, J., Kettel Khan, L., & Bisogni, C. (1998). A conceptual model of the food and nutrition system. *Social Science & Medicine, 47*(7), 853–863. https://doi.org/10.1016/S0277-9536(98)00104-X — seminal — [Zotero](zotero://select/library/items/XV2M4EJ7)
@@ -152,3 +173,6 @@ LIST FROM [[]] AND "4. Discuss" SORT file.name DESC
 | E42 | There are multiple parallel food systems, not one system with one logic | Features | Leeuwis et al. (2021) | "there exist multiple parallel systems that serve different producers and consumers" | p. 762 | [open](zotero://open-pdf/library/items/E232CGY2?page=2) |
 | E43 | Hanoi policy relied on replacing wet markets with supermarkets | Features | Wertheim-Heck et al. (2015) | "replacing wet markets with supermarkets" | p. 95 | [open](zotero://open-pdf/library/items/MLCYDY9V?page=1) |
 | E44 | Retail modernisation in Hanoi reaches only a minor segment of the population | Features | Wertheim-Heck et al. (2015) | "reaches only a minor segment of the population" | p. 95 | [open](zotero://open-pdf/library/items/MLCYDY9V?page=1) |
+| E45 | The 3ie map found 1,838 impact evaluations and 178 systematic reviews | Implications | Moore et al. (2021) | "A total of 1,838 impact evaluations and 178 systematic reviews were identified." | p. iii | [open](zotero://open-pdf/library/items/354Z9P5N?page=6) |
+| E46 | Most evidence covers supplements, fortification and consumer classes | Implications | Moore et al. (2021) | "the provision of supplements, fortification, classes in the consumer behaviour domain" | p. iii | [open](zotero://open-pdf/library/items/354Z9P5N?page=6) |
+| E47 | Three quarters of evaluations used randomised designs | Implications | Moore et al. (2021) | "Roughly three quarters of impact evaluations implemented randomised designs" | p. iii | [open](zotero://open-pdf/library/items/354Z9P5N?page=6) |

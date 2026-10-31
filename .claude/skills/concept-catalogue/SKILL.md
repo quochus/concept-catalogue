@@ -1,11 +1,11 @@
 ---
-name: concept-catalogue
-description: Use when Quoc asks to add, draft, discuss, review or update an entry in his Obsidian concept catalogue (concepts, frameworks, methods in food systems, NRM, supply chains), or to plan or pick the next entries from its backlog.
+name: "concept-catalogue"
+description: "Use when Quoc asks to add, draft, discuss, review or update an entry in his Obsidian concept catalogue (concepts, frameworks, approaches, methods and topics in food systems, NRM, supply chains), or to plan or pick the next entries from its backlog."
 ---
 
 # Concept catalogue
 
-Quoc keeps a personal catalogue of concepts, frameworks, methods and approaches as an Obsidian vault. It is a reference for his writing and a learning tool. Entries are built one at a time from a planned backlog of ~250 concepts, ideally in the order his current work needs them.
+Quoc keeps a personal catalogue of concepts, frameworks, approaches, methods and topics as an Obsidian vault. It is a reference for his writing and a learning tool. Entries are built one at a time from a planned backlog of ~250 concepts, ideally in the order his current work needs them.
 
 ## 1. Where things are
 
@@ -32,7 +32,7 @@ CLAUDE.md                                pointer to this skill
     New papers/New papers YYYY-MM-DD.md  one page per sync: a table of the papers Quoc kept (APA 7 reference with at most 3 authors then et al. and no URL, one-line summary, relevant concepts as [[links]] to existing pages, DOI/link; A–Z by first author)
     _old paper notes/                    per-paper notes from before 2026-10-24; unused, safe to delete
     Concept updates/YYYY-MM-DD.md        suggested edits to concept pages
-3. Concepts/0. Dictionary.md             A–Z list of linked concept names (Dataview LIST; updates itself; never edit; see §3)
+3. Concepts/0. Dictionary.md             total entry count + A–Z list of linked concept names (Dataview; updates itself; never edit; see §3)
 3. Concepts/0. Backlog.md                the plan (waves, pace, week-by-week order) and the concept list: ID, type, wave, scope, tier, review, status
 3. Concepts/<Concept name>.md            one page per concept
 4. Discuss/YYYY-MM-DD <topic>.md         one page per discussion (index: Discuss.md)
@@ -48,7 +48,8 @@ Evidence lives in each concept page (Key sources + Evidence). There is no Source
 - **File name = concept name**, sentence case, singular unless the plural is the term ("Food systems approach", "Institutions"), no abbreviation in the name. Put abbreviations and synonyms in `aliases` (e.g. `aliases: [MLP]`).
 - **Frontmatter** (every concept page):
   ```yaml
-  type: concept | framework | approach
+  type: concept | framework | approach | method | topic
+  tags: [entry, <same as type>]       # e.g. [entry, framework]
   short: "<one sentence, ≤ 30 words, no citations>"
   aliases: []
   fields: [<1–3 from the list below>]
@@ -59,7 +60,8 @@ Evidence lives in each concept page (Key sources + Evidence). There is no Source
   created: YYYY-MM-DD
   last_reviewed: YYYY-MM-DD
   ```
-- **type**: *concept* = an idea or phenomenon; *framework* = a structured scheme of components or levels; *approach* = a way of acting, intervening or doing research that combines principles and practice, including research and assessment methods (Quoc merged *method* into *approach*, 28 Oct 2026; don't use `method`).
+- **type**: *concept* = an idea or phenomenon; *framework* = a structured scheme of components or levels; *approach* = a way of acting or intervening that combines principles and practice; *method* = a research or analysis method: a procedure for collecting, analysing or assessing data; *topic* = a subject area or field of study and practice that brings together several concepts, frameworks and approaches rather than naming one idea (added by Quoc, 31 Oct 2026). If the type is unclear, propose one and ask.
+- **tags** (set by Quoc, 31 Oct 2026): every entry page has exactly two tags, `entry` (all pages) and its type: `concept`, `framework`, `approach`, `method` or `topic`. Keep the type tag in step with `type` if the type changes. No other tags unless Quoc adds them. Older pages without tags get them when they are next upgraded or edited.
 - **fields** (controlled list): food systems · sustainability transitions · innovation and scaling · agroecology · sustainable agriculture · value chains and markets · consumption and nutrition · food security and safety · governance and policy · institutions · natural resource management · research methods.
 - **related**: link only to pages that exist or to names in `0. Backlog.md`. If a needed concept is in neither, add it under "Proposed additions" in the backlog and tell Quoc.
 - **scope**: *broad* = an umbrella concept that covers many practices, actors or cases (e.g. Agroecology, Food system, Value chain, Food security, Institutions); *focused* = a specific principle, mechanism, tool or relation (e.g. Connectivity, Participatory guarantee systems, Willingness to pay). The backlog's Scope column sets it; scope decides the source count and the shape of Implications.
@@ -67,14 +69,22 @@ Evidence lives in each concept page (Key sources + Evidence). There is no Source
 - **In-text citations** are APA 7: `(Wezel et al., 2009, p. 503)`, `(Holt-Giménez & Altieri, 2013, p. 90)`, `Gliessman (2016, p. 188) describes…`. Use `PDF p. 6` when the document has no printed page numbers, and `Fig. 2, p. 9` / `Table 1, p. 7` for figures and tables.
 - **Language**: plain, short sentences, British spelling except in quotes and titles, "Viet Nam" in prose. No headings inside sections; bold lead-ins are fine.
 - **Claude's own synthesis** (a grouping, typology or proxy not taken from a source) is allowed but must be labelled in the text: *(Claude's grouping, not from a source)*.
+- **Quotes are in italics** (set by Quoc, 31 Oct 2026). Every direct quote on an entry page, in the prose, the case tables and the Quote column of Evidence, is written in italics with the quotation marks inside the asterisks: `*"a stronger emphasis on movement"*` (Wezel et al., 2009, p. 503). The citation stays outside the italics. Verify the quote text without the asterisks (`zcat.py quote`). Exceptions: "My first take" and "In my words" are Quoc's own words and are never reformatted.
 
 ### The Dictionary (`3. Concepts/0. Dictionary.md`)
-Its current format (since 21 Oct 2026) is a plain A–Z list of linked concept names, grouped by first letter, with no definitions or other columns:
+Its current format (since 31 Oct 2026) is a self-updating count of all entries, then a plain A–Z list of linked concept names, grouped by first letter, with no definitions or other columns:
 ````markdown
 ---
 cssclasses: [dictionary]
 ---
 # Dictionary
+
+```dataview
+TABLE WITHOUT ID length(rows) AS "Total entries"
+FROM "3. Concepts"
+WHERE type AND file.name != this.file.name
+GROUP BY "all"
+```
 
 ```dataview
 LIST rows.file.link
@@ -85,7 +95,8 @@ GROUP BY upper(substring(file.name, 0, 1)) AS Letter
 SORT Letter ASC
 ```
 ````
-- **Never edit this file** (no tables, definitions, extra columns or hand-written entries). It updates itself. If its format looks wrong or Quoc wants it changed, ask first; when he changes it, update this section to match.
+- **The total number of entries** is shown by the first query and counts every page the list shows (stubs included), so it always matches the list. If the file still has the older format without the count block, add the count block exactly as above, once; that is the only edit allowed. Also report the new total in the reply after adding an entry (Step 6).
+- **Never edit this file otherwise** (no extra tables, definitions, columns, hand-written counts or entries). It updates itself. If its format looks wrong or Quoc wants it changed, ask first; when he changes it, update this section to match.
 - A page is listed **only if** it sits in `3. Concepts/` (keep concept pages in the folder root, no subfolders) **and** has a non-empty `type`. So every concept page needs `type`, and no other file in `3. Concepts/` may have a `type` property (`0. Backlog.md` has none on purpose).
 - The letter group comes from the **first character of the file name**, so file names must start with a letter: no leading digits, quotes, brackets or "The"/"A" (write "Commons", not "The commons").
 - Stub pages (`status: first take`) have a `type`, so the query lists them as soon as they are created. Leave it that way unless Quoc asks to hide stubs.
@@ -94,7 +105,7 @@ SORT Letter ASC
 ## 4. Workflow for a new entry
 
 ### Step 0. Choose the concept
-1. If Quoc names a concept, use it. If it is not in `0. Backlog.md`, add it to the right cluster with the next free ID (e.g. `C25`), type, wave, scope and tier, and tell him.
+1. If Quoc names a concept, use it. If it is not in `0. Backlog.md`, add it to the right cluster with the next free ID (e.g. `C25`), type, wave, scope and tier, and tell him. This applies to every new page, however it starts (a request, filing daily notes, a discussion, a merge or split): no page exists in `3. Concepts/` without a backlog row.
 2. Otherwise read `0. Backlog.md` and propose the next one: lowest wave with `status: todo`, skipping concepts Quoc marked **N** in the Review column and preferring those marked **Y**, then what his current work needs (a concept named in today's daily note, or a missing `related` link). Propose, don't start.
 3. Check the Dictionary and backlog for overlap. If the concept is close to an existing page, ask whether to merge, narrow, or keep both, and note the boundary.
 
@@ -105,7 +116,7 @@ Ask in one short message:
 
 For a week's batch (the Monday routine in `0. Backlog.md`), list up to 5 concepts in that day's daily note under `## First takes this week` and ask once.
 
-Wait for the answer. As soon as it arrives, create the page from `Templates/Concept.md` with `status: first take`, the frontmatter filled from the backlog, and his words pasted **verbatim** under "My first take" with the date. Set the backlog status to `first take`. If he says skip, leave the section empty and note "(skipped)". Never write or paraphrase his first take.
+Wait for the answer. As soon as it arrives, create the page from `Templates/Concept.md` with `status: first take`, the frontmatter filled from the backlog (including `tags: [entry, <type>]`; if the template lacks a `tags` line, add one to the template), and his words pasted **verbatim** under "My first take" with the date. Set the backlog status to `first take`. If he says skip, leave the section empty and note "(skipped)". Never write or paraphrase his first take.
 
 ### Step 2. Gather sources
 Required mix (compact needs 1–3 plus either 4 or 5; broad scope also needs 7):
@@ -157,14 +168,24 @@ Follow `Templates/Concept.md` (no H1; sections in this order). The aim is a page
 5. *Boundaries*: how it differs from neighbouring concepts ("not to be confused with…").
 End the section with one sentence in bold: **Working definition used here:** … (cited or marked as Claude's synthesis).
 
-**Features: one paragraph per element, in this fixed order; each paragraph ends by setting up the next.**
-- Concepts and approaches: **Components** (what it consists of) → **Mechanisms** (how and why it produces effects) → **Conditions** (what enables or constrains it; where it works and where it doesn't) → **Measurement** (indicators, tools, how studies operationalise it) → **Debates** (what is contested, by whom, and on what grounds).
+**Features: one block per element, in this fixed order; each block is a bold label on its own line followed by bullet points** (set by Quoc, 31 Oct 2026).
+- Concepts, approaches and topics: **Components** (what it consists of) → **Mechanisms** (how and why it produces effects) → **Conditions** (what enables or constrains it; where it works and where it doesn't) → **Measurement** (indicators, tools, how studies operationalise it) → **Debates** (what is contested, by whom, and on what grounds).
 - Frameworks: **Structure** → **Logic** (how the parts relate) → **Assumptions** → **Operationalisation** → **Critiques**.
-- Approaches that are research or assessment methods (mostly cluster K): **Components** → **Procedure** (main steps) → **Assumptions** → **Quality criteria** → **Critiques and limits**.
-Use bold lead-ins for these labels only. Debates present both sides with sources, then say what remains unresolved.
+- Methods: **Components** → **Procedure** (main steps) → **Assumptions** → **Quality criteria** → **Critiques and limits**.
+
+Format each block like this (bold label, not a heading, since sections have no headings inside them):
+```markdown
+**Mechanisms**
+- Shorter chains raise trust because buyers can see who grew the food (Author, 2020, p. 4).
+- Price premiums reach farmers only where … (Author, 2023, p. 12).
+```
+- Each bullet is one point in one or two full sentences, with its citation; typically 3–6 bullets per block. Sub-bullets only for a short list inside a point (e.g. the steps of a procedure).
+- Order bullets so they build on each other; the last bullet of a block may set up the next block.
+- **Debates / Critiques**: one bullet per side or position, each with sources, and a final bullet that says what remains unresolved.
+- Keep the content depth of the old paragraph format: bullets are a layout change, not a reason to drop sourced points.
 
 **Implications: shape and depth follow the concept's scope.**
-- *Broad concept or approach* (e.g. Agroecology):
+- *Broad concept, approach or topic* (e.g. Agroecology):
   1. **Evidence overview** (1–2 paragraphs): what systematic/scoping reviews and meta-analyses find: outcomes studied, direction and strength of effects, where evidence is thin.
   2. **Case table** of 5–8 **distinct** cases. Pick them to span the concept's own typology (for agroecology: practice types such as diversification, agroforestry, crop–livestock integration, biological pest control; and initiative types such as farmer movements, territorial programmes, public policy, market institutions). Name the typology used. Include at least one Viet Nam/ASEAN case and at least one contested or unsuccessful case.
      `| Case | Where, when | Type | What was done | Outcomes reported | Source |`
@@ -172,7 +193,7 @@ Use bold lead-ins for these labels only. Debates present both sides with sources
 - *Broad concept with a compact tier*: the same three parts, with 3–4 cases in the table.
 - *Focused concept or approach* (e.g. Connectivity): 2–4 cases that show the mechanism at work (bullets with bold lead-ins, or the case table), then one paragraph on what they show together. Add a review's findings if one exists.
 - *Framework*: an applications table, `| Study | Context | How the framework was used | Insight |` (3–5 rows), then a paragraph on how it has been adapted and the limits seen in use.
-- *Approach that is a research or assessment method*: an applications table (3–4 rows, same columns), then practical guidance: when to use it, data needed, common pitfalls.
+- *Method*: an applications table (3–4 rows, same columns), then practical guidance: when to use it, data needed, common pitfalls.
 Viet Nam/ASEAN evidence comes first where it exists; say so when none was found.
 
 **Own works.** Quoc's publications, manuscripts, reports and projects that use the concept. Find them in Zotero (author Nguyen, Q.) and, for CIAT work, link with obsidian:// URIs. Titles and links only; no CIAT content. "None yet" if none.
@@ -193,20 +214,22 @@ Viet Nam/ASEAN evidence comes first where it exists; say so when none was found.
 ```
 | ID | Claim (as stated on this page) | Section | Source | Quote | Locator | Open |
 |---|---|---|---|---|---|---|
-| E1 | The weight given to each meaning differs by country; Brazil stresses movement and practice | Definitions | Wezel et al. (2009) | "a stronger emphasis on movement and agricultural practice in Brazil" | p. 503 | [open](zotero://open-pdf/library/items/VS4NFSMA?page=1) |
+| E1 | The weight given to each meaning differs by country; Brazil stresses movement and practice | Definitions | Wezel et al. (2009) | *"a stronger emphasis on movement and agricultural practice in Brazil"* | p. 503 | [open](zotero://open-pdf/library/items/VS4NFSMA?page=1) |
 ```
-- *Claim* restates the page's claim in one line, close to its wording, so the row can be found in the text. *Quote* is the exact supporting words (< 15 words; escape `|` as `\|`). *Locator* is the printed page (or `PDF p. N`, `Fig. 2, p. 9`). *Open* uses the **attachment** key and the PDF page index; for items without a PDF, use `[select](zotero://select/library/items/PARENTKEY)` and give the locator in words.
+- *Claim* restates the page's claim in one line, close to its wording, so the row can be found in the text. *Quote* is the exact supporting words in italics, `*"…"*` (< 15 words; escape `|` as `\|`). *Locator* is the printed page (or `PDF p. N`, `Fig. 2, p. 9`). *Open* uses the **attachment** key and the PDF page index; for items without a PDF, use `[select](zotero://select/library/items/PARENTKEY)` and give the locator in words.
 - Every direct quote in the prose has a row. Each row supports one claim; a claim with two sources gets two rows.
 
-Finally set `status: draft`, keep `created` (the first-take date), set `last_reviewed` to today, and fill `short`, `related`, `scope` and `tier`.
+Finally set `status: draft`, keep `created` (the first-take date), set `last_reviewed` to today, and fill `tags`, `short`, `related`, `scope` and `tier`.
 
 ### Step 5. QA checklist (run before finishing; fix, don't report)
-- [ ] Frontmatter complete; `type` (concept, framework or approach), `fields`, `scope`, `tier`, `status` use allowed values; `short` ≤ 30 words.
+- [ ] Frontmatter complete; `type`, `fields`, `scope`, `tier`, `status` use allowed values; `short` ≤ 30 words.
+- [ ] `tags` is `[entry, <type>]` and the second tag matches `type`.
 - [ ] Every `[[link]]` resolves to an existing page or a backlog name.
 - [ ] The page will show in the Dictionary under the right letter: it is in the root of `3. Concepts/`, has `type`, and its file name starts with a letter.
 - [ ] Source mix from Step 2 is met (or the gap is stated in the page); broad concepts have a review or meta-analysis.
 - [ ] Definitions read as one argument: origin → evolution (with reasons) → core → divergence → boundaries → bold working definition; no bullets.
-- [ ] Features follow the fixed order for the type, and each paragraph leads into the next.
+- [ ] Features follow the fixed order for the type; each element is a bold label on its own line followed by cited bullet points; Debates/Critiques end with an "unresolved" bullet.
+- [ ] Every direct quote (prose, tables, Evidence) is in italics as `*"…"*`, citation outside the italics.
 - [ ] Implications match the scope: broad = evidence overview + 5–8 distinct cases in a table (typology named, Viet Nam/ASEAN and a contested case included) + lessons; focused = 2–4 cases + synthesis; framework/method = applications table + guidance.
 - [ ] Key sources = every cited work and nothing else, APA 7, A–Z, roles filled, no `ROLE` or flag comments left.
 - [ ] Evidence is a table; every row has claim, section, source, quote (`zcat.py quote` → OK), locator and link.
@@ -218,15 +241,18 @@ Finally set `status: draft`, keep `created` (the first-take date), set `last_rev
 Links check (on the laptop): `grep -o '\[\[[^]|]*' "3. Concepts/<Name>.md" | sort -u`, then confirm each is a page or a backlog name.
 
 ### Step 6. Finish
-1. Update the concept's row in `0. Backlog.md`: status `draft`, and the progress line at the top.
-   Make the backlog name a link (`[[Name]]`) once the page exists, spelled exactly like the file name. Don't touch `0. Dictionary.md`; it picks the page up by itself.
-2. Add any newly needed concepts under "Proposed additions" in the backlog.
-3. Reply to Quoc in two or three lines: what was added, any gaps (e.g. no Viet Nam evidence, sources to add to Zotero), and a prompt to write "In my words".
-4. Local vault: leave committing to Obsidian Git. GitHub fallback: commit (`Add entry: <Name>`).
+1. Update `0. Backlog.md` every time, whether or not the entry was in the plan:
+   - the concept's row: status `draft` (add the row first, with the next free ID, type, wave, scope and tier, if the concept was unplanned; mark it `unplanned` in the Review column so Quoc can see it);
+   - make the backlog name a link (`[[Name]]`), spelled exactly like the file name;
+   - the progress line and plan counts at the top (pages created, drafted, reviewed, total in the backlog).
+2. `0. Dictionary.md`: don't touch it; it picks the page up and recounts by itself. Only if the count block is missing, add it as in §3.
+3. Add any newly needed concepts under "Proposed additions" in the backlog.
+4. Reply to Quoc in two or three lines: what was added, the new total number of entries, any gaps (e.g. no Viet Nam evidence, sources to add to Zotero), and a prompt to write "In my words".
+5. Local vault: leave committing to Obsidian Git. GitHub fallback: commit (`Add entry: <Name>`).
 
 ## 5. Review of a draft, and upgrading older pages
 
-When Quoc has read a draft and asks for changes, make only those changes. When he asks to bring an older page up to the current standard, rebuild it with Steps 2–5: keep "My first take", "In my words" and "Own works" exactly as they are, reuse quotes already verified (re-check them with `zcat.py quote`), add sources where the new scope rules need them, and rewrite Definitions, Features and Implications to the new structure. Say in the reply what changed. When he says it is reviewed (or writes "In my words"), set `status: reviewed`, update `last_reviewed`, and mark it `reviewed` in the backlog. When two backlog entries are folded together, move the distinct content into the surviving page, mark the other page with a "Merged" note (don't delete it; Quoc does), and set its backlog status to `merged into <ID>`.
+When Quoc has read a draft and asks for changes, make only those changes. When he asks to bring an older page up to the current standard, rebuild it with Steps 2–5: keep "My first take", "In my words" and "Own works" exactly as they are, reuse quotes already verified (re-check them with `zcat.py quote`), add sources where the new scope rules need them, and rewrite Definitions, Features and Implications to the new structure (including tags, italic quotes and bullet-point Features). When Quoc asks only for a format pass on older pages, apply just tags, italic quotes and the Features layout, without changing content. Say in the reply what changed. When he says it is reviewed (or writes "In my words"), set `status: reviewed`, update `last_reviewed`, and mark it `reviewed` in the backlog. When two backlog entries are folded together, move the distinct content into the surviving page, mark the other page with a "Merged" note (don't delete it; Quoc does), and set its backlog status to `merged into <ID>`.
 
 ## 6. Discussions
 

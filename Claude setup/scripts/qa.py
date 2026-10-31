@@ -7,7 +7,7 @@ rows=[r for r in ev.split('\n') if re.match(r'\| E\d+ \|',r)]
 bad=0; evq=set()
 for r in rows:
     c=[x.strip() for x in r.split('|')[1:-1]]
-    q=c[4].strip('"'); evq.add(zcat.norm(q))
+    q=c[4].strip().strip('*').strip('"'); evq.add(zcat.norm(q))
     m=re.search(r'items/([A-Z0-9]{8})\?page=(\d+)',c[6])
     if not m: print('NOLINK',c[0]); bad+=1; continue
     p=zcat.pdfpath(m.group(1)); n=int(m.group(2))

@@ -9,7 +9,7 @@ tier: compact
 status: draft
 created: 2026-10-22
 last_reviewed: 2026-10-22
-tags: [approach, concept, entry]
+tags: [entry, approach]
 ---
 
 ## My first take
@@ -21,27 +21,34 @@ tags: [approach, concept, entry]
 > [!note] Merged (25 Oct 2026)
 > This entry is folded into [[Regenerative agriculture]], as planned in the Backlog (B19 → B10). Its definition, learning mechanism, Laos case and sources were moved there. This page is kept unchanged below for reference; Quoc can delete it when he has reviewed the merge.
 
-Conservation agriculture grew out of efforts to stop soil erosion under plough-based farming, and it is defined by its practices. It is "usually defined by three main principles": "minimal disturbance of the soil (reduced tillage or no-tillage)", soil cover by crop residues or cover crops, and appropriate crop rotation (Vankeerberghen & Stassart, 2016, p. 392). FAO adopted this three-principle definition, which made it an institutional programme as well as a farming practice.
+Conservation agriculture grew out of efforts to stop soil erosion under plough-based farming, and it is defined by its practices. It is *"usually defined by three main principles"*: *"minimal disturbance of the soil (reduced tillage or no-tillage)"*, soil cover by crop residues or cover crops, and appropriate crop rotation (Vankeerberghen & Stassart, 2016, p. 392). FAO adopted this three-principle definition, which made it an institutional programme as well as a farming practice.
 
-Its meaning then widened from a technical package to a transition. Studies of farmers moving to it show that the change is cognitive as well as technical: "learning and experiencing processes can lead to a transformation in soil" management perceptions (Vankeerberghen & Stassart, 2016, p. 392), and conservation agriculture grows as a niche, "progressively detaching itself from the conventional agricultural regime" (p. 392).
+Its meaning then widened from a technical package to a transition. Studies of farmers moving to it show that the change is cognitive as well as technical: *"learning and experiencing processes can lead to a transformation in soil"* management perceptions (Vankeerberghen & Stassart, 2016, p. 392), and conservation agriculture grows as a niche, *"progressively detaching itself from the conventional agricultural regime"* (p. 392).
 
-Definitions diverge less than for [[Regenerative agriculture]], because the three principles are widely shared; the differences lie in what is added (herbicide use, livestock, social aims). Its boundaries are with organic farming, which bans synthetic inputs and is regulated and labelled, while conservation agriculture "has less visibility in society than organic farming" (Vankeerberghen & Stassart, 2014, p. 1378). Its core practices also sit inside regenerative agriculture: "crop residue retention, cover cropping and reduced tillage are central to the canon" of good agricultural practice (Giller et al., 2021, p. 13).
+Definitions diverge less than for [[Regenerative agriculture]], because the three principles are widely shared; the differences lie in what is added (herbicide use, livestock, social aims). Its boundaries are with organic farming, which bans synthetic inputs and is regulated and labelled, while conservation agriculture *"has less visibility in society than organic farming"* (Vankeerberghen & Stassart, 2014, p. 1378). Its core practices also sit inside regenerative agriculture: *"crop residue retention, cover cropping and reduced tillage are central to the canon"* of good agricultural practice (Giller et al., 2021, p. 13).
 
 **Working definition used here:** conservation agriculture is farming based on minimal soil disturbance, permanent soil cover and crop rotation, adopted through a learning process that gradually moves farmers away from plough-based systems *(Claude's synthesis of Vankeerberghen & Stassart, 2016)*.
 
 ## Features
-**Components.** The three principles, put into practice as no-till or direct seeding, mulch or cover crops (in Laos and Cambodia, direct seeding into mulch-based cropping systems) and rotations. These components only work together, which is the mechanism.
+**Components**
+- The three principles, put into practice as no-till or direct seeding, mulch or cover crops (in Laos and Cambodia, direct seeding into mulch-based cropping systems) and rotations. These components only work together, which is the mechanism.
 
-**Mechanisms.** Soil cover and no-till protect the soil from erosion and build organic matter; rotation breaks pest cycles. The social mechanism is learning: farmers' perceptions of soil change as they experiment (Vankeerberghen & Stassart, 2016, p. 392).
+**Mechanisms**
+- Soil cover and no-till protect the soil from erosion and build organic matter; rotation breaks pest cycles.
+- The social mechanism is learning: farmers' perceptions of soil change as they experiment (Vankeerberghen & Stassart, 2016, p. 392).
 
-**Conditions.** Adoption depends on seed for cover crops, machinery for direct seeding, and markets. In Cambodia, domestic cover-crop seed production grew "from 2 ha in 2017 to 177 ha in 2023", but farmers named economic and climatic constraints as barriers to wider use (À Hauariki et al., 2026, p. 1).
+**Conditions**
+- Adoption depends on seed for cover crops, machinery for direct seeding, and markets. In Cambodia, domestic cover-crop seed production grew *"from 2 ha in 2017 to 177 ha in 2023"*, but farmers named economic and climatic constraints as barriers to wider use (À Hauariki et al., 2026, p. 1).
 
-**Measurement.** Adoption is counted as area under the three principles; effects as erosion, soil organic matter, yields and labour.
+**Measurement**
+- Adoption is counted as area under the three principles; effects as erosion, soil organic matter, yields and labour.
 
-**Debates.** Its benefits for smallholder yields are debated in the agronomy literature, which is not yet in Quoc's Zotero (see the gap note under Key sources). Its low public visibility also means it attracts fewer price premiums than organic products (Vankeerberghen & Stassart, 2014, p. 1378).
+**Debates**
+- Its benefits for smallholder yields are debated in the agronomy literature, which is not yet in Quoc's Zotero (see the gap note under Key sources).
+- Its low public visibility also means it attracts fewer price premiums than organic products (Vankeerberghen & Stassart, 2014, p. 1378).
 
 ## Implications
-- **Laos.** From 2005, projects worked "to support conservation agriculture alternatives to intensive maize-based monocropping systems" in Sayaburi and Xiengkhuang (Castella et al., 2022, p. 4), and set up farmer groups in 44 villages (p. 5).
+- **Laos.** From 2005, projects worked *"to support conservation agriculture alternatives to intensive maize-based monocropping systems"* in Sayaburi and Xiengkhuang (Castella et al., 2022, p. 4), and set up farmer groups in 44 villages (p. 5).
 - **Cambodia.** Cover crops in rice and the seed chain behind them show that conservation agriculture spreads as a bundle of practice, seed supply and incentives (À Hauariki et al., 2026, p. 1). See [[Innovation bundling]].
 
 In the Mekong cases, conservation agriculture spread through projects, research centres and farmer groups, not markets; for IP1+, the open question is whether market or consumer incentives can carry it further.
@@ -50,7 +57,7 @@ In the Mekong cases, conservation agriculture spread through projects, research 
 None yet.
 
 ## Comparison with my first take
-*No first take recorded (skipped 22 Oct 2026). Add yours to "My first take" and ask Claude to fill in this comparison.*
+*No first take recorded (skipped 22 Oct 2026). Add yours to *"My first take"* and ask Claude to fill in this comparison.*
 
 ## In my words
 *One sentence, written by me.*
@@ -74,12 +81,12 @@ LIST FROM [[]] AND "4. Discuss" SORT file.name DESC
 ## Evidence
 | ID | Claim (as stated on this page) | Section | Source | Quote | Locator | Open |
 |---|---|---|---|---|---|---|
-| E0 | CA is defined by three principles | Definitions | Vankeerberghen & Stassart (2016) | "usually defined by three main principles" | p. 392 | [open](zotero://open-pdf/library/items/6ZSBTFJU?page=2) |
-| E1 | The first principle is minimal soil disturbance | Definitions | Vankeerberghen & Stassart (2016) | "minimal disturbance of the soil (reduced tillage or no-tillage)" | p. 392 | [open](zotero://open-pdf/library/items/6ZSBTFJU?page=2) |
-| E2 | Learning changes how farmers see soil | Definitions; Features | Vankeerberghen & Stassart (2016) | "learning and experiencing processes can lead to a transformation in soil" | p. 392 | [open](zotero://open-pdf/library/items/6ZSBTFJU?page=2) |
-| E3 | CA grows as a niche detaching from the regime | Definitions | Vankeerberghen & Stassart (2016) | "progressively detaching itself from the conventional agricultural regime" | p. 392 | [open](zotero://open-pdf/library/items/6ZSBTFJU?page=2) |
-| E4 | CA is less visible than organic farming | Definitions; Features | Vankeerberghen & Stassart (2014) | "has less visibility in society than organic farming" | p. 1378 | [open](zotero://open-pdf/library/items/UFZQNS75?page=1) |
-| E5 | CA practices are core good agricultural practice | Definitions | Giller et al. (2021) | "crop residue retention, cover cropping and reduced tillage are central to the canon" | p. 13 | [open](zotero://open-pdf/library/items/MLASXFBP?page=1) |
-| E6 | Cambodian cover-crop seed area grew quickly | Features | À Hauariki et al. (2026) | "from 2 ha in 2017 to 177 ha in 2023" | p. 1 | [open](zotero://open-pdf/library/items/BABXQILN?page=1) |
-| E7 | Laos projects supported CA as an alternative to maize monocropping | Implications | Castella et al. (2022) | "to support conservation agriculture alternatives to intensive maize-based monocropping systems" | p. 4 | [open](zotero://open-pdf/library/items/J6WTB2NH?page=4) |
-| E8 | Farmer groups covered 44 villages | Implications | Castella et al. (2022) | "set up CA farmer groups in 44 villages, involving about 1100 households" | p. 5 | [open](zotero://open-pdf/library/items/J6WTB2NH?page=5) |
+| E0 | CA is defined by three principles | Definitions | Vankeerberghen & Stassart (2016) | *"usually defined by three main principles"* | p. 392 | [open](zotero://open-pdf/library/items/6ZSBTFJU?page=2) |
+| E1 | The first principle is minimal soil disturbance | Definitions | Vankeerberghen & Stassart (2016) | *"minimal disturbance of the soil (reduced tillage or no-tillage)"* | p. 392 | [open](zotero://open-pdf/library/items/6ZSBTFJU?page=2) |
+| E2 | Learning changes how farmers see soil | Definitions; Features | Vankeerberghen & Stassart (2016) | *"learning and experiencing processes can lead to a transformation in soil"* | p. 392 | [open](zotero://open-pdf/library/items/6ZSBTFJU?page=2) |
+| E3 | CA grows as a niche detaching from the regime | Definitions | Vankeerberghen & Stassart (2016) | *"progressively detaching itself from the conventional agricultural regime"* | p. 392 | [open](zotero://open-pdf/library/items/6ZSBTFJU?page=2) |
+| E4 | CA is less visible than organic farming | Definitions; Features | Vankeerberghen & Stassart (2014) | *"has less visibility in society than organic farming"* | p. 1378 | [open](zotero://open-pdf/library/items/UFZQNS75?page=1) |
+| E5 | CA practices are core good agricultural practice | Definitions | Giller et al. (2021) | *"crop residue retention, cover cropping and reduced tillage are central to the canon"* | p. 13 | [open](zotero://open-pdf/library/items/MLASXFBP?page=1) |
+| E6 | Cambodian cover-crop seed area grew quickly | Features | À Hauariki et al. (2026) | *"from 2 ha in 2017 to 177 ha in 2023"* | p. 1 | [open](zotero://open-pdf/library/items/BABXQILN?page=1) |
+| E7 | Laos projects supported CA as an alternative to maize monocropping | Implications | Castella et al. (2022) | *"to support conservation agriculture alternatives to intensive maize-based monocropping systems"* | p. 4 | [open](zotero://open-pdf/library/items/J6WTB2NH?page=4) |
+| E8 | Farmer groups covered 44 villages | Implications | Castella et al. (2022) | *"set up CA farmer groups in 44 villages, involving about 1100 households"* | p. 5 | [open](zotero://open-pdf/library/items/J6WTB2NH?page=5) |

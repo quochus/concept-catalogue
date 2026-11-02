@@ -18,7 +18,7 @@
       "query": "tag:#concept  ",
       "color": {
         "a": 1,
-        "rgb": 13292362
+        "rgb": 65284
       }
     },
     {
@@ -46,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.3628873693012141,
-  "close": false
+  "scale": 0.5087618855792633,
+  "close": true
 }

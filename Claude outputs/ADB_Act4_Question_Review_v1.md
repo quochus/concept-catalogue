@@ -97,6 +97,8 @@ Counts of questions as printed (excluding Part II profile items). "Applies to" f
 - (a) Keep government and development agencies as secondary sources for programs, certification, existing infrastructure and lessons, and say in the protocol that the primary focus is private actors, as in the ToR.
 - (b) Drop the Act 4 parts of Tools 3 and 5, and cover programs and lessons through the desk review. This shortens Tools 3 and 5 but changes Protocol v4.
 
+**Decision (Quoc, 2026-11-05):** option (a). Government (extension) and development agencies are secondary sources. Some of them may also act as technology providers; their provider experience is recorded too. Added to protocol v2, section 1.5.
+
 ### 3.2 Information needed and source
 
 | Information (from protocol 1.6 Analysis) | Supply side (T1) | Demand side (T2) | Government (T3) | Dev. agencies (T5) | Tech providers (T6) | Desk review |

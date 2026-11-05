@@ -32,7 +32,7 @@ Assess current technological practices in Son La's fruit and vegetable supply ch
 
 ### 1.3 Key concepts
 
-- **Technology readiness** covers two things: how mature and proven a technology is for use, as measured by technology readiness levels (Mankins, 2009), and how able and willing its intended users and the surrounding system are to adopt and sustain it (Parasuraman, 2000; Sartas et al., 2020). This assessment focuses mainly on the second, the readiness and capacities of supply chain actors.
+- **Technology readiness** covers two things: how mature and proven a technology is for use, as measured by technology readiness levels (Mankins, 2009), and how able and willing the actors who would use and operate it, and the surrounding system, are to adopt and sustain it (Sartas et al., 2020). This assessment focuses mainly on the second, the readiness and capacities of businesses in the supply chain. It does not measure consumers' attitudes to technology.
 - **Logistics-related technologies** are the physical and digital tools used between harvest and the consumer to keep produce in good condition, monitor its condition, and coordinate and trace its movement (adapted from Kitinoja et al., 2011; Kaur & Watson, 2024).
 - **Post-harvest handling and storage** is the set of practices, facilities and technologies used from harvest until sale or processing (harvesting, sorting and grading, packing, pre-cooling, storage and transport) to keep produce marketable and limit physical and economic losses (Affognon et al., 2015; Kaur & Watson, 2024).
 - **Cold chain** is the linked set of pre-cooling, cold storage and temperature-controlled transport, connected by temperature monitoring, that keeps perishable produce within a product-specific temperature range from harvest to consumer (Makule et al., 2022; Mercier et al., 2017).
@@ -127,7 +127,6 @@ Ethical procedures follow the Research Protocol (v4):
 - Mankins, J. C. (2009). Technology readiness assessments: A retrospective. *Acta Astronautica, 65*(9–10), 1216–1223. https://doi.org/10.1016/j.actaastro.2009.03.058
 - Mercier, S., Villeneuve, S., Mondor, M., & Uysal, I. (2017). Time–temperature management along the food cold chain: A review of recent developments. *Comprehensive Reviews in Food Science and Food Safety, 16*(4), 647–667. https://doi.org/10.1111/1541-4337.12269
 - Olsen, P., & Borit, M. (2018). The components of a food traceability system. *Trends in Food Science & Technology, 77*, 143–149. https://doi.org/10.1016/j.tifs.2018.05.004
-- Parasuraman, A. (2000). Technology Readiness Index (TRI): A multiple-item scale to measure readiness to embrace new technologies. *Journal of Service Research, 2*(4), 307–320. https://doi.org/10.1177/109467050024001
 - Sartas, M., Schut, M., Proietti, C., Thiele, G., & Leeuwis, C. (2020). Scaling Readiness: Science and practice of an approach to enhance impact of research for development. *Agricultural Systems, 183*, 102874. https://doi.org/10.1016/j.agsy.2020.102874
 - Sen, P. T. (2017). Moc Chau vegetable farmers' use of data-aided decision-making, traceability, quality assurance, and access to higher value markets. In *Transforming lives and livelihoods: The digital revolution in agriculture. Proceedings of the Crawford Fund 2017 Annual Conference* (pp. 101–104). Crawford Fund.
 
@@ -203,6 +202,7 @@ Ethical procedures follow the Research Protocol (v4):
   - Refrigerated transport
   - Temperature and humidity monitoring (sensors/IoT)
   - Traceability software
+- For each solution, is it already in routine commercial use (not only pilots) in conditions similar to Son La's? Where, since when, and at what scale? *(Probe: fresh fruit and vegetables, mountainous provinces, electricity reliability, road access, climate, seasonal volumes)*
 - What key technical specifications and operating conditions should guide technology selection? Can the systems integrate with other equipment, logistics-management systems or traceability platforms? *(Probe: temperature/humidity ranges, cooling time, storage duration, throughput, monitoring frequency, data storage)*
 - What are the indicative investment and operating costs of different options, including electricity/energy, labor, maintenance and consumables? What is the expected useful life, and what major replacement costs should be anticipated? What causes costs to vary? *(Probe: capacity, temperature range, automation, energy efficiency, site conditions)*
 - What are the typical energy requirements of the proposed systems? What energy-efficiency measures and backup-power solutions would you recommend for a facility in Son La?

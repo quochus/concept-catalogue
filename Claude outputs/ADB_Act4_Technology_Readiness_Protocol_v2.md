@@ -42,6 +42,8 @@ Assess current technological practices in Son La's fruit and vegetable supply ch
 
 The team will review existing assessments of relevant technology adoption in Vietnam's Northern highland supply chains. Technical requirements, covering cold storage systems, temperature monitoring, traceability, and safety and quality management, will be reviewed with consideration of the expected scale and commodity profile of a Son La logistics center, cold chain and storage systems.
 
+Existing evidence points to the gaps the review will examine. In Vietnam, more than 90% of agricultural products transported to agricultural wholesale markets move without cold storage or refrigerated transport, and shippers treat the cold chain as an expense rather than an added value (Ho et al., 2022, p. 48). In Moc Chau, Son La, farmer groups used QR codes to trace the origin of vegetables supplied to retailers, but because QR codes add cost, they used them only for retailers that required them (Sen, 2017, pp. 101, 103).
+
 ### 1.5 Key informant interviews (8–10 KIIs)
 
 - *Son La supply-side actors (cooperatives, traders, logistics operators and agribusinesses)* with experiences regarding cold storage, quality control, or traceability systems: current technology practices, operational experience, maintenance challenges, financial capacity for technology investment, capacity utilization, energy reliability, data exchange, and willingness to use and pay for logistics center services.
@@ -118,6 +120,7 @@ Ethical procedures follow the Research Protocol (v4):
 ## References
 
 - Affognon, H., Mutungi, C., Sanginga, P., & Borgemeister, C. (2015). Unpacking postharvest losses in sub-Saharan Africa: A meta-analysis. *World Development, 66*, 49–68. https://doi.org/10.1016/j.worlddev.2014.08.002
+- Ho, T. T. H., Tang, M. H., & Nguyen, Q. L. (2022). Cold chain and food loss in the Vietnamese food chain. *Transportation Research Procedia, 64*, 44–52. https://doi.org/10.1016/j.trpro.2022.09.006
 - Kaur, R., & Watson, J. A. (2024). A scoping review of postharvest losses, supply chain management, and technology: Implications for produce quality in developing countries. *Journal of the ASABE, 67*(5), 1103–1131. https://doi.org/10.13031/ja.15660
 - Kitinoja, L., Saran, S., Roy, S. K., & Kader, A. A. (2011). Postharvest technology for developing countries: Challenges and opportunities in research, outreach and advocacy. *Journal of the Science of Food and Agriculture, 91*(4), 597–603. https://doi.org/10.1002/jsfa.4295
 - Makule, E., Dimoso, N., & Tassou, S. A. (2022). Precooling and cold storage methods for fruits and vegetables in sub-Saharan Africa—A review. *Horticulturae, 8*(9), 776. https://doi.org/10.3390/horticulturae8090776
@@ -126,6 +129,7 @@ Ethical procedures follow the Research Protocol (v4):
 - Olsen, P., & Borit, M. (2018). The components of a food traceability system. *Trends in Food Science & Technology, 77*, 143–149. https://doi.org/10.1016/j.tifs.2018.05.004
 - Parasuraman, A. (2000). Technology Readiness Index (TRI): A multiple-item scale to measure readiness to embrace new technologies. *Journal of Service Research, 2*(4), 307–320. https://doi.org/10.1177/109467050024001
 - Sartas, M., Schut, M., Proietti, C., Thiele, G., & Leeuwis, C. (2020). Scaling Readiness: Science and practice of an approach to enhance impact of research for development. *Agricultural Systems, 183*, 102874. https://doi.org/10.1016/j.agsy.2020.102874
+- Sen, P. T. (2017). Moc Chau vegetable farmers' use of data-aided decision-making, traceability, quality assurance, and access to higher value markets. In *Transforming lives and livelihoods: The digital revolution in agriculture. Proceedings of the Crawford Fund 2017 Annual Conference* (pp. 101–104). Crawford Fund.
 
 ---
 

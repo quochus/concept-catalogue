@@ -6,9 +6,10 @@
 // What it does (additive only: nothing is moved, deleted or merged):
 //   1. Uses the existing folder "3.5 Markets, value chains & retail › Food loss and waste" (key SHZ5DNQR)
 //      and creates a sub-folder inside it: "Food loss and waste in Viet Nam".
-//   2. Imports 2 DOIs checked on Crossref (Parfitt et al. 2010; FAO SOFA 2019) and adds 1 report by hand
-//      (Gustavsson et al. 2011, FAO; fields taken from the reference lists of papers already in Zotero),
-//      then files every existing item the two pages cite into the matching folder.
+//   2. Imports 18 DOIs checked on Crossref (9 general FLW works, 9 Viet Nam studies found in a literature
+//      search on 13 Nov) and adds 2 reports by hand (Gustavsson et al. 2011, FAO; Kok et al. 2024, WUR brief
+//      on rice food loss in Viet Nam), then files every existing item the two pages cite, plus five relevant
+//      items already in the library, into the matching folder.
 //   3. Tries open-access PDF links (FAO, UN Digital Library, Royal Society), then Find Available PDF,
 //      for every touched item without a PDF; erases any download that is not a PDF.
 //   4. Ends with a summary and a check that no touched item is outside a folder.
@@ -23,6 +24,13 @@ const FOLDERS = [
     dois: [
       { doi: "10.1098/rstb.2010.0126", note: "Parfitt, Barthel & Macnaughton 2010, food waste within food supply chains (Phil Trans B 365(1554), 3065-3081)" },
       { doi: "10.18356/32f21f8c-en", note: "FAO 2019, The State of Food and Agriculture 2019: moving forward on food loss and waste reduction" },
+      { doi: "10.1021/acs.est.7b00401", note: "Xue et al. 2017, Missing food, missing data? Critical review of global FLW data (634 cites)" },
+      { doi: "10.1016/j.gfs.2016.11.004", note: "Chaboud & Daviron 2017, Food losses and waste: navigating the inconsistencies (191 cites)" },
+      { doi: "10.1016/j.foodpol.2017.03.012", note: "Sheahan & Barrett 2017, Review: food loss and waste in sub-Saharan Africa (284 cites)" },
+      { doi: "10.1093/ajae/aax034", note: "Bellemare et al. 2017, On the measurement of food waste (295 cites)" },
+      { doi: "10.1016/j.resconrec.2013.04.011", note: "Quested et al. 2013, Spaghetti soup: the complex world of food waste behaviours (758 cites)" },
+      { doi: "10.1016/j.scitotenv.2016.07.041", note: "Porter et al. 2016, half-century of GHG from FLW (loss rates used in the Viet Nam model)" },
+      { doi: "10.3389/fhort.2025.1529040", note: "Ambuko et al. 2025, FLW data gaps in fruit and vegetable value chains (review)" },
     ],
     manual: [
       { note: "Gustavsson et al. 2011, Global food losses and food waste (FAO)",
@@ -40,16 +48,48 @@ const FOLDERS = [
     // existing items cited on "Food loss and waste" (parent keys, checked in the database copy)
     items: ["J8MCCYSW", "QI2WU8J3", "533RYBZA", "325UTQIJ", "NHWPU5HX", "2ZXVSCTR", "4RGU8E8N", "4RQAUD97",
             "I9LYC844", "5RTT8UZX", "GRYYL6YX", "2U6KBGB7", "M69V2NLP", "KD6ZEQPU", "VL7X3NDZ", "9656HVW9",
-            "4AKJEGWT", "DMM5PZMR", "X7YSVP4S", "WPRARBB9", "JGNDBNPW"] },
+            "4AKJEGWT", "DMM5PZMR", "X7YSVP4S", "WPRARBB9", "JGNDBNPW",
+            "LPSLSHBW", "JGNXK2PB"] },   // Fabi et al. 2021; Hodges et al. 2011 (already in library)
   { id: "FLWVN", name: "Food loss and waste in Viet Nam", parentId: "FLW", page: "Food loss and waste in Viet Nam",
-    dois: [], manual: [],
-    items: ["TT5Q3JB5", "X7YSVP4S", "IWBELK5L", "QF6NGNJE", "4NZBJF2X", "DMM5PZMR", "IGUVCWPL", "4AKJEGWT", "K4C7HRJU"] },
+    dois: [
+      { doi: "10.3390/su12166565", note: "Liu & Nguyen 2020, household food waste generation in Hanoi and SDG 12.3" },
+      { doi: "10.3390/su13137368", note: "Pham et al. 2021, food waste in Da Nang: trends, challenges, perspectives" },
+      { doi: "10.1016/j.clwas.2025.100349", note: "Nguyen & Nguyen 2025, extended TPB and household food waste reduction in Viet Nam" },
+      { doi: "10.1007/s43621-026-04333-z", note: "Tran et al. 2026, urban household food waste reduction intentions in Viet Nam (TPB)" },
+      { doi: "10.18174/577022", note: "Axmann, Soethoudt & Thuy 2022, Roadmap post-harvest loss reduction in Vietnamese value chains, phase 2 (WFBR report 2330)" },
+      { doi: "10.56097/binhduonguniversityjournalofscienceandtechnology.v5i2.42", note: "Tang et al. 2022, Tackling food loss in Viet Nam's logistics sector via technology" },
+      { doi: "10.17660/actahortic.2018.1213.4", note: "Phan 2018, mechanization and postharvest technologies in Viet Nam's rice sector" },
+      { doi: "10.5539/jas.v17n11p40", note: "Pham et al. 2025, determinants of post-harvest losses in Vietnamese lychee farming" },
+      { doi: "10.61602/jdi.2025.81.09", note: "Ho et al. 2025, shallot supply chain losses in Tra Vinh province" },
+    ],
+    manual: [
+      { note: "Kok et al. 2024, Insights from primary data collection on rice food loss in Vietnam (WUR brief)",
+        itemType: "report",
+        fields: { title: "Insights from primary data collection on rice food loss in Vietnam", institution: "Wageningen University & Research",
+                  place: "Wageningen", date: "2024", reportType: "Brief", url: "https://hdl.handle.net/10568/168355" },
+        creators: [
+          { firstName: "M. G.", lastName: "Kok", creatorType: "author" },
+          { firstName: "J. M.", lastName: "Soethoudt", creatorType: "author" },
+          { firstName: "X.", lastName: "Guo", creatorType: "author" },
+          { firstName: "H. B.", lastName: "Axmann", creatorType: "author" } ],
+        pdf: [] },
+    ],
+    items: ["TT5Q3JB5", "X7YSVP4S", "IWBELK5L", "QF6NGNJE", "4NZBJF2X", "DMM5PZMR", "IGUVCWPL", "4AKJEGWT", "K4C7HRJU",
+            "JE5IMKAL", "GU2T5V38", "W9YBLWCZ"] },   // Yang et al. 2021; Gligor et al. 2018; Pottinger-Glass et al. 2025 (already in library)
 ];
 
 // Open-access PDF links tried for existing items that have no PDF yet
 const PDF_URLS = {
   "WPRARBB9": ["https://digitallibrary.un.org/record/4042857/files/1401794_EN.pdf"],   // UNEP Food Waste Index Report 2024
   "JGNDBNPW": ["http://www.fao.org/3/a-i3901e.pdf"],                                    // HLPE 2014, Food losses and waste
+};
+// Open-access PDF links tried first for newly imported DOIs (then Find Available PDF)
+const DOI_PDF = {
+  "10.1098/rstb.2010.0126": ["https://royalsocietypublishing.org/doi/pdf/10.1098/rstb.2010.0126"],
+  "10.18356/32f21f8c-en": ["https://www.fao.org/3/ca6030en/ca6030en.pdf"],
+  "10.18174/577022": ["https://edepot.wur.nl/577022"],
+  "10.5539/jas.v17n11p40": ["https://ccsenet.org/journal/index.php/jas/article/download/0/0/52305/56959"],
+  "10.61602/jdi.2025.81.09": ["https://vjol.info.vn/kttc/vi/article/view/114187/95517"],
 };
 
 // ---------------------------------------------------------------------------
@@ -181,8 +221,7 @@ if (!DRY_RUN) {
   for (const item of touched.values()) {
     if (hasPDF(item)) continue;
     const doi = (item.getField("DOI") || "").toLowerCase();
-    if (doi === "10.1098/rstb.2010.0126" && await attachFromURL(item, "https://royalsocietypublishing.org/doi/pdf/10.1098/rstb.2010.0126")) { nPDF++; say(`PDF attached (Royal Society): Parfitt et al. 2010`); continue; }
-    if (doi === "10.18356/32f21f8c-en" && await attachFromURL(item, "https://www.fao.org/3/ca6030en/ca6030en.pdf")) { nPDF++; say(`PDF attached (FAO): SOFA 2019`); continue; }
+    if (DOI_PDF[doi] && await attachFromURL(item, DOI_PDF[doi])) { nPDF++; say(`PDF attached from open-access link: ${item.getField("title").slice(0, 70)}`); continue; }
     if (await tryPDF(item)) { nPDF++; say(`PDF added: ${item.getField("title").slice(0, 70)}`); }
   }
 }

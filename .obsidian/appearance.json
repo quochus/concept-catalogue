@@ -2,5 +2,6 @@
   "enabledCssSnippets": [
     "calm-colors"
   ],
-  "accentColor": "#3f6fa3"
+  "accentColor": "#3f6fa3",
+  "showRibbon": true
 }

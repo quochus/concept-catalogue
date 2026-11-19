@@ -107,7 +107,7 @@ The concept also needs boundaries with its neighbours. A food system is not the 
 - Nguyen, Q. (2026). *Food system transitions in lower and middle-income countries: Exploring the missing middle in the cases of Vietnam* (PhD thesis) — [Zotero](zotero://select/library/items/6JXTYFJT)
 - Nguyen-Minh, Q., et al. (2023). Food system transitions in Vietnam: The case of pork and vegetable networks — [Zotero](zotero://select/library/items/CP7QASVY)
 - Nguyen-Minh, Q., et al. (2025). *Food system profile: Son La Province, Vietnam* — [Zotero](zotero://select/library/items/9LQ8FVWI)
-- Duong, T. T., et al. (2025). *Food system profile: Mekong Delta, Vietnam* — [Zotero](zotero://select/library/items/A64FRKFC)
+- Duong, T. T., et al. (2025). *Food system profile: Mekong Delta, Vietnam* — [Zotero](zotero://select/groups/5844753/items/A64FRKFC)
 - Hoang, K. T., et al. (2025). Tracking a decade of food system transformation in Vietnam's Mekong Delta — [Zotero](zotero://select/library/items/26523ILG)
 
 ## Comparison with my first take
